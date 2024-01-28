@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+
     <style>
         *{
             box-sizing: border-box;
@@ -16,16 +19,20 @@
             font-family: "Noto Naskh Arabic", serif;
             font-optical-sizing: auto;
             font-style: normal;
-            margin-left: 0;
-            margin-right: 0;
+            
             
         }
-
-        h1::selection{
-        background-color: coral;
+        body{
+            margin-left: 0;
+            margin-right: 0;
         }
+        h1::selection, h2::selection, p::selection{
+            background-color: #FFA722;
+        }
+
+        
         /* Navigation header styling */
-        nav{
+        .website-navigation{
             height: 6rem;
             box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
             padding: 0 2rem;
@@ -49,6 +56,7 @@
         .website-logo{
             margin-left: -1rem;
             
+
         }
 
         /* The main content styling */
@@ -132,13 +140,87 @@
             background-color: #367EFF;
             border: none;
             border-radius: 1rem;
-            padding: 1.2rem;
+            padding: 1.5rem;
             cursor: pointer;
         }
         .jump-to-ebook a{
             font-size: 1.6rem;
             text-decoration: none;
             color: white;
+        }
+
+
+        /* Fourth Section */
+        .fourth-section{
+            max-width: 95vw;
+            margin: auto;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        .fourth-section h2{
+            font-size: 3.036rem;
+            font-weight: 400;
+            text-align: center;
+            line-height: 2.8rem;
+            letter-spacing: -1.88px;
+            margin-top: 0;
+            margin-bottom: 0.6rem;
+        }
+        .fourth-section p{
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        .book-features-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            max-width: 80%;
+        }
+        .book-mockup{
+            max-width: 80%; 
+        }
+        .book-features-container div div h5{
+            font-size: 2rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 0;
+            
+        }
+        .book-features-container div div p{
+            font-size: 1.6rem;
+            font-family: "Vazirmatn", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 1rem;
+        }
+        .book-features{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .book-features-container div div{
+            margin-top: 2rem;
+        }
+
+
+        /* Fifth Section */
+        .fifth-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 80vw;
+            margin: auto;
+        }
+        .fifth-section p{
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-align: center;
         }
 
         /* h1 span{
@@ -153,7 +235,7 @@
     </style>
 </head>
 <body>
-    <nav class="website- navigation">
+    <nav class="website-navigation">
         <button class="menu-button">
             <i class="fa-solid fa-bars"></i>
         </button>
@@ -203,12 +285,49 @@
                 </p>
                 <button class="jump-to-ebook">
                     <a href="#hey">Jump to E-book</a>
-                    
                 </button>
             </div>
             <object data="/images/time-management.svg"></object>
-           
-            
+        </section>
+
+        <section class="fourth-section"> <!--Fourth Section of this page-->
+            <h2>
+                In this FREE mini-ebook, 
+            </h2>
+            <p>you'll unlock bite-sized tips and strategies to squeeze the most out of your 24 hours. These practical hacks will help you:
+            </p>
+            <div class="book-features-container"> <!--This should work for the desktop version if we use display flex-->
+                <img src="/images/book-mockup.png" class="book-mockup" alt="image of the FREE ebook">
+                <div class="book-features">
+                    <div> <!--First feature-->
+                        <h5>Boost your productivity</h5>
+                        <p>This will help conquer your to-do list in record time! ⚡️</p>
+                    </div>
+                    <div> <!--Second feature-->
+                        <h5>Minimize stress</h5>
+                        <p>Chill vibes only: Stress be gone!</p>
+                    </div>
+                    <div> <!--Third feature-->
+                        <h5>Achieve your goals faster</h5>
+                        <p>⏳ Time is precious, you will learn how to make it count.</p>
+                    </div>
+                    <div> <!--Fourth feature-->
+                        <h5>Create a satisfying and balanced life ✨</h5>
+                        <p>Time well claimed, life well-played.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fifth-section"> <!--Fifth Section of this page-->
+            <p>
+                Whether you're a seasoned "go-getter" or just starting your journey towards a more fulfilling life, this e-book has something for everyone. Don't just take our word for it - see what other readers are saying:
+            </p>
+            <div class="readers-review"> <!--Readers Review-->
+                <div>
+                    
+                </div>
+            </div>
         </section>
         
         
