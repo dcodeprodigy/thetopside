@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f2f2;
+    display: inline;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.logos-slide{
+    display: inline-block;
+    animation: 35s slide infinite linear;
+    
+    
+}
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+
+.logos-slide img{
+    height: 50px;
+    margin: 0 40px;
+    
+}
+.logos{
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    padding: 60px 0;
+    background-color: white;
+}
+.logos::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0.13));
+    content: "";
+    z-index: 2;
+}
+.logos::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 100%;
+    background: linear-gradient(to left, white, rgba(255, 255, 255, 0.13));
+    content: "";
+    z-index: 2;
+}
+

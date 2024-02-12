@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.6/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.6/swiper-bundle.min.js"></script>
+  <title>PROFILE CARD</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+  *{
+      box-sizing: border-box;
+     font-family: "Poppins",sans-serif;
+     
+    }
+    body{
+     background-color: #fafaf3;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     
+    }
+    .broad-container{
+      padding: 8px 0;
+      display:grid;
+      grid-auto-flow: column;
+      
+      grid-gap: 10px;
+      overflow: auto ;
+    }
+    .container{
+      width: 280px;
+      border-radius: 30px;
+      background-color:white;
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      box-shadow:0px 0px 8px rgba(0, 0, 0, 0.25);
+    }
+    
+    .container .top-image-part img{
+      width: 50%;
+      border-radius:50%;
+      border: 2px solid white;
+    }
+    .top-image-part, .bottom-part{
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+    }
+    .top-image-part{
+      background-color: #1976D2;
+      padding:15px 0;
+      border-radius:30px;
+      border-bottom-right-radius: 0px;
+      position: relative ;
+    }
+    .top-image-part::before,
+    .top-image-part::after{
+      content:'';
+      position:absolute;
+      right: 0;
+      bottom:-40px;
+      width:40px;
+      height:40px;
+      background-color: #1976D2;
+    }
+    .top-image-part::after{
+      border-radius: 0px 30px 0px 0px;
+      background-color: #ffffff;
+    }
+    .bottom-part{
+      padding: 12px 14px;
+      padding-top:8px ;
+    }
+    h4{
+      margin-bottom:0;
+      margin-top: 8px; 
+      color: white;
+    }
+    p{
+      text-align: center;
+      max-width: 80%;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 1.5;
+    }
+    button{
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      color: #1976D2;
+      cursor: pointer;
+    }
+    button:hover{
+      background-color: #1976D2;
+      color: white;
+      animation: 250ms button-style;
+    }
+    @keyframes button-style {
+      from{
+        background-color: rgb(240, 240, 240);
+        color: #1976D2;
+        transform: translateY(-100);
+      }
+      to{
+        color: #ffffff;
+        background-color: #1976D2;
+        transform: translateX(100);
+
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="broad-container">
+    <div class="container">
+      <div class="top-image-part">
+        <img src="./gallery/medium (4).webp" alt="Image">
+        <h4 class="occupation">Product Manager</h4>
+      </div>
+      <div class="bottom-part">
+      
+        <p>Hey there!
+        <br>I am Your Product Manager for this Very Important Project. I am Thrilled to Begin this Journey with You
+        </p>
+        <button>
+          Learn more
+        </button>
+      </div>
+    </div>
+  
+  
+  <div class="container">
+    <div class="top-image-part">
+      <img src="./gallery/medium (4).webp" alt="Image">
+       <h4 class="occupation">Product Manager</h4>
+    </div>
+    <div class="bottom-part">
+      
+      <p>Hey there!
+      <br>I am Your Product Manager for this Very Important Project. I am Thrilled to Begin this Journey with You
+      </p>
+      <button>
+        Learn more
+      </button>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    <div class="top-image-part">
+      <img src="./gallery/medium (4).webp" alt="Image">
+       <h4 class="occupation">Product Manager</h4>
+    </div>
+    <div class="bottom-part">
+      <p>Hey there!
+      <br>I am Your Product Manager for this Very Important Project. I am Thrilled to Begin this Journey with You
+      </p>
+      <button>
+        Learn more
+      </button>
+    </div>
+  </div>
+  </div>
+  
+
+  
+</body>
+</html>
