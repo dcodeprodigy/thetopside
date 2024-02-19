@@ -1,0 +1,388 @@
+*{
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: "Noto Naskh Arabic", Arial;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+    
+}
+body{
+    margin-left: 0;
+    margin-right: 0;
+}
+h1::selection, h2::selection, p::selection, h1 span::selection{
+    background-color: #FFA722;
+}
+
+
+/* Navigation header styling */
+.website-navigation{
+    height: 6rem;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    background-color: #FFf;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.menu-button{
+    background-color:black;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.fa-bars{
+    color: white;
+    height: 40%;
+}
+
+.website-logo{
+    margin-left: -1rem;
+    
+
+}
+
+/* The main content styling */
+/* First section of the website */
+.first-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    min-height: 100dvh;
+    margin: auto;
+    padding: 0 1.2rem;
+}
+h1{
+    color:#131316;
+    text-size-adjust: 100%;
+    font-family: Noto Naskh arabic;
+    font-weight: 700;
+    letter-spacing: -1.3264px;
+    line-height: 1;
+    text-align: center;
+    padding: 0 2rem;
+    margin-top: 12rem;
+    margin-bottom: 0rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+h1 span{
+    color: #27AE60;
+}
+h1, h1 span{ /* Header 1 font-sizes */
+    font-size: 3.6rem;
+}
+.illustration-1{
+    max-width: 90vw;
+    margin: auto;
+}
+
+/* Second Section */
+.second-section{
+    max-width: 80rem;
+    padding: 1.2rem;
+    margin: auto;
+}
+.community-icon{
+    width: 8rem;
+}
+.second-section  h2{
+    font-size: 2.8rem;
+    text-align: center;
+    line-height: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.second-section p{
+    font-size: 1.6rem;
+    margin-top: 0.8rem;
+    text-align: center;
+    font-weight: 400;
+}
+.sub-second-section{
+    max-width: 500px;
+    margin: auto;
+    padding: 1.5rem;
+    padding-bottom: 0;
+    font-size: 1.6rem;
+    font-family: vazirmatn, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: background-color 750ms ease-in, border-radius 750ms ease in;
+}
+.sub-second-section:nth-of-type(1):hover{
+    background-color: #ee9f29;
+    border-radius: 0.8rem;
+}
+.sub-second-section:nth-of-type(2):hover{
+    background-color: #ff3651;
+    border-radius: 0.8rem;
+}
+
+
+
+/* Third section styling */
+.third-section{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1.5rem;
+    padding-top: 0;
+
+}
+.third-section object{
+    min-width: 100%;
+}
+.third-section h2{
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin-top: 0;
+}
+.third-section p{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.jump-to-ebook{
+    font-size: 1.6rem;
+    color: white;
+    background-color: #367EFF;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    cursor: pointer;
+}
+.jump-to-ebook a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Fourth Section */
+.fourth-section{
+    max-width: 95vw;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.fourth-section h2{
+    font-size: 3.036rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 2.8rem;
+    letter-spacing: -1.88px;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+}
+.fourth-section p{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.book-features-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 80%;
+}
+.book-mockup{
+    max-width: 85%; 
+}
+.book-features-container div div h5{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    
+}
+.book-features-container div div p{
+    font-size: 1.6rem;
+    font-family: "Vazirmatn", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+.book-features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.book-features-container div div{
+    margin-top: 2rem;
+}
+.book-features div:first-of-type h5{
+    margin-top: 1rem;
+}
+
+
+/* Fifth Section */
+.fifth-section{
+    max-width: 90vw;
+    margin: auto;
+    
+}
+.fifth-section p:first-of-type{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.newsletter-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5rem 2rem 1rem;
+    margin: auto;
+    max-width: 50rem;
+    
+}
+
+.newsletter-section h3{
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin: 1rem;
+    line-height: 1;
+}
+
+
+
+.newsletter-section .input-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    min-width: 100%;
+    
+}
+
+.newsletter-section .input-section .sub-input-section{
+    display: inline-block;
+    width: 100%;
+}
+
+.newsletter-section .sub-input-section div {
+    display: inline-block;
+    width: 15%;
+    height: 4.9rem;
+    padding: 1rem;
+    margin-right: -1rem;
+    border: 1px solid rgba(221, 221, 221, 0.767);
+    border-right: none;
+    border-radius: 0.6rem;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    vertical-align: bottom;
+}
+.newsletter-section .message-icon{
+    height: 25px;
+}
+.newsletter-section .input-field{
+    padding: 0;
+    width: calc(85% + 0.5rem);
+    height: 4.9rem;
+    padding-left: 0.8rem;
+    border: 1px solid rgba(221, 221, 221, 0.767);
+    border-left: none;
+    border-radius: 0.6rem;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;    
+    outline: none;
+    caret-color: #0c469c98;
+
+}
+
+.newsletter-section .input-field::placeholder{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #6c6d6e;
+}
+
+.newsletter-section button{
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.8rem 1.6rem;
+    width: 100%;
+    margin-top: 1rem;
+    color: #ffffffd0;
+    background-color: #1761eb;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.newsletter-section button:hover{
+    background-color: #468af0;
+}
+
+.newsletter-section p{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+/* h1 span{
+    color: #00008B;
+    font-size: clamp(1.5rem, 10vw, 4.8rem);
+    font-weight: 700;
+    letter-spacing: -1.5264px;
+    
+} */
+
+
+/* MEDIA QUERIES */
+@media(min-width:550px){
+    .illustration-1{
+        max-width: 80vw;
+    }
+}
+
+@media(min-width:600px){
+    .first-section{
+        flex-direction: row-reverse;
+    }
+    .illustration-1{
+        max-width: 50vw;
+        margin-top: 5rem;
+    }
+    h1, h1 span{ /* Header 1 font-sizes */
+        font-size: 4.2rem;
+    }
+}
+@media(max-width:722px){
+    .illustration-1{
+        max-width: 60vw;
+    }
+    .first-section{
+        min-height: 100dvh;
+    }
+}
+@media(max-width:680px){
+    .illustration-1{
+        max-width: 80vw;
+    }
+}
+@media(min-width:750px){ 
+    h1, h1 span{ /* Header 1 font-sizes */
+        font-size: 4.8rem;
+    }
+}
