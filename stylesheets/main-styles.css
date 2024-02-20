@@ -18,7 +18,7 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
 
 /* Navigation header styling */
 .website-navigation{
-    height: 6rem;
+    height: 7.5rem;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
     background-color: #FFf;
     padding: 0 2rem;
@@ -83,8 +83,9 @@ h1, h1 span{ /* Header 1 font-sizes */
     font-size: 3.6rem;
 }
 .illustration-1{
-    max-width: 90vw;
+    max-width: 100vw;
     margin: auto;
+    
 }
 
 /* Second Section */
@@ -149,6 +150,10 @@ h1, h1 span{ /* Header 1 font-sizes */
     font-size: 2rem;
     line-height: 2.8rem;
     margin-top: 0;
+}
+.third-section div h2 span{
+    font-size: 2rem;
+    color: #1761eb;
 }
 .third-section p{
     font-size: 1.6rem;
@@ -293,9 +298,11 @@ h1, h1 span{ /* Header 1 font-sizes */
     vertical-align: bottom;
 }
 .newsletter-section .message-icon{
-    height: 25px;
+    height: 2.5rem;
+    
 }
 .newsletter-section .input-field{
+    font-size: 1.4rem;
     padding: 0;
     width: calc(85% + 0.5rem);
     height: 4.9rem;
@@ -338,6 +345,131 @@ h1, h1 span{ /* Header 1 font-sizes */
 
 
 
+/* Section Seven */
+.moderators{
+    padding-top: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+}
+.moderators div h2{
+    font-size: 3rem;
+    line-height: 1;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.4rem;
+    background-image: radial-gradient( circle farthest-corner at 0.2% 0.5%,  rgba(68,36,164,1) 3.7%, rgb(84, 146, 228) 92.7% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: clipAnimation 2s infinite ease-in;
+    
+}
+
+@keyframes clipAnimation {
+        
+}
+
+
+.moderators p{
+    font-size: calc(1.5rem + .15vw);
+    font-family: Vazirmatn, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-top: 0;
+    color: rgba(39, 40, 42, 0.7);
+    text-align: center;
+    line-height: 28px;
+    
+}
+
+.moderators .mods-section{
+    display: grid;
+    padding-top: 3rem;
+}
+
+
+.mods{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.mods img{
+    max-width: 22rem;
+    border-radius: 50%;
+}
+
+.mods img:nth-of-type(1){
+    border: 0.3rem solid #1761eb;
+    padding: 0.3rem;
+    background-color: #fff;
+}
+
+
+.mods h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.mods h5, .mods p{
+    font-family: Vazirmatn, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #6c6d6e;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.mods h5{
+    margin-top: 0;
+}
+
+.mods p{
+    padding: 0 2rem;
+    font-weight: 400;
+}
+
+
+
+/* Footer */
+footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20%;
+    height: 25rem;
+    width: 100%;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #9c9c9c;
+}
+
+footer div {
+    font-size: 1.8rem; 
+    display: block;
+}
+footer div h4{
+    font-size: 1.4rem;
+    margin-bottom: 0; 
+}
+footer div a {
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+footer div a:hover{
+    text-decoration: underline;
+}
+
+/* The 2nd form styling */
+
+.sendIcon{
+    height: 2.5rem !important;
+    width: 1.5rem !important;
+}
 
 
 /* h1 span{
