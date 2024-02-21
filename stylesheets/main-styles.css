@@ -240,13 +240,31 @@ h1, h1 span{ /* Header 1 font-sizes */
 
 /* Fifth Section */
 .fifth-section{
-    max-width: 90vw;
-    margin: auto;
+    background-color: #131316;
+    padding: 2.5rem;
+    max-width: 100vw;
+    margin: 0;
     
 }
+.fifth-section h2 {
+    color: #f1f1f1;
+    font-size: 2.4rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    margin: auto;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
 .fifth-section p:first-of-type{
+    max-width: 50rem;
+    padding-bottom: 2rem;
+    margin: auto;
     font-size: 1.6rem;
     font-weight: 500;
+    color: #fff;
+    text-align: center;
 }
 
 .newsletter-section{
@@ -341,6 +359,7 @@ h1, h1 span{ /* Header 1 font-sizes */
 
 .newsletter-section p{
     font-size: 1.5rem;
+    padding-top: 1rem;
 }
 
 
@@ -397,6 +416,7 @@ h1, h1 span{ /* Header 1 font-sizes */
 
 .mods img{
     max-width: 22rem;
+
     border-radius: 50%;
 }
 
@@ -438,26 +458,30 @@ h1, h1 span{ /* Header 1 font-sizes */
 /* Footer */
 footer{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 5%;
     height: 25rem;
     width: 100%;
     padding: 2rem;
+    background-color: #02102b;
     margin-top: 2rem;
     border-top: 1px solid #9c9c9c;
 }
 
 footer div {
     font-size: 1.8rem; 
+    color: #ee9f29;
     display: block;
 }
 footer div h4{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    color: #ee9f29;
     margin-bottom: 0; 
 }
 footer div a {
     display: block;
-    font-size: 1.2rem;
+    color: #e4e4e4bd;
+    font-size: 1.3rem;
     text-decoration: none;
 }
 footer div a:hover{
@@ -465,11 +489,49 @@ footer div a:hover{
 }
 
 /* The 2nd form styling */
-
-.sendIcon{
-    height: 2.5rem !important;
-    width: 1.5rem !important;
+.second-form h3{
+    color: #ee9f29;
+    font-size: 1.5rem;
+    margin-bottom: 0;
 }
+
+.second-form, p{
+    color: #e4e4e4bd;
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.email-icon{
+    width: 2.4rem;
+    height: 2.4rem;
+    vertical-align: middle;
+}
+
+.second-input-section{
+    display: inline-block;
+    width: 100%;
+}
+.second-form .second-input-section .second-input{
+    padding: 1rem;
+    max-width: 40rem;
+    width: 100%;
+    border: 1px solid rgba(39, 40, 42, 0.3);
+}
+.sendIconButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 6rem;
+    padding: 0.5rem;
+    width: 100%;
+    background-color: #367EFF;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+
+
 
 
 /* h1 span{
