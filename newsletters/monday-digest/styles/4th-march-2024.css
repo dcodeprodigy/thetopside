@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&family=Vazirmatn:wght@100..900&display=swap');
+
+html, body {
+                margin: 0 !important;
+                padding: 0 !important;
+                min-height: 100% !important;
+                width: 100% !important;
+                -webkit-font-smoothing: antialiased;
+            }
+    
+            * {
+                -ms-text-size-adjust: 100%;
+            }
+            .share-article{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                max-width: 500px;
+                margin: auto;
+                color: white;
+                background-color: rgb(15, 112, 141);
+                border-radius: 5px ;
+                padding: 5px;
+    
+            }
+            .share-article a img{
+                width: 35px;
+            }
+    
+            #outlook a {
+                padding: 0;
+            }
+    
+            .ReadMsgBody,
+            .ExternalClass {
+                width: 100%;
+            }
+    
+            .ExternalClass,
+            .ExternalClass p,
+            .ExternalClass td,
+            .ExternalClass div,
+            .ExternalClass span,
+            .ExternalClass font {
+                line-height: 100%;
+            }
+    
+            div[style*="margin: 14px 0"],
+            div[style*="margin: 16px 0"] {
+                margin: 0 !important;
+            }
+    
+            
+    
+            img {
+                border: 0;
+                outline: none;
+                line-height: 100%;
+                text-decoration: none;
+                -ms-interpolation-mode: bicubic;
+            }
+    
+            a[x-apple-data-detectors] {
+                color: inherit !important;
+                text-decoration: none !important;
+            }
+    
+            .pc-gmail-fix {
+                display: none;
+                display: none !important;
+            }
+    
+            @media (min-width: 621px) {
+                .pc-lg-hide {
+                    display: none;
+                } 
+    
+                .pc-lg-bg-img-hide {
+                    background-image: none !important;
+                }
+            }
+            
+
+    @media (max-width: 620px) {
+    .pc-project-body {min-width: 0px !important;}
+    .pc-project-container {width: 100% !important;}
+    .pc-sm-hide {display: none !important;}
+    .pc-sm-bg-img-hide {background-image: none !important;}
+    .pc-w620-padding-0-10 {padding-left: 5px !important;padding-right: 5px !important;}
+    table.pc-w620-spacing-0-0-70-0 {margin: 0px 0px 70px 0px !important;}
+    td.pc-w620-spacing-0-0-70-0,th.pc-w620-spacing-0-0-70-0{margin: 0 !important;padding: 0px 0px 70px 0px !important;}
+    table.pc-w620-spacing-0-0-10-0 {margin: 0px 0px 10px 0px !important;}
+    td.pc-w620-spacing-0-0-10-0,th.pc-w620-spacing-0-0-10-0{margin: 0 !important;padding: 0px 0px 10px 0px !important;}
+    .pc-w620-fontSize-12px {font-size: 12px !important;}
+    .pc-w620-fontSize-20px {font-size: 20px !important;}
+    .pc-w620-lineHeight-40 {line-height: 40px !important;}
+    .pc-w620-padding-32-35-32-35 {padding: 32px 35px 32px 35px !important;}
+    .pc-w620-width-100pc {width: 100% !important;}a.pc-w620-width-100pc {padding-left: 0 !important; padding-right: 0 !important;}
+    .pc-w620-padding-10-35-10-35 {padding: 10px 35px 10px 35px !important;}
+    .pc-w620-padding-0-20 {padding-left: 10px !important;padding-right: 10px !important;}
+    .pc-w620-padding-30-20-30-20 {padding: 30px 20px 30px 20px !important;}
+    table.pc-w620-spacing-20-0-0-0 {margin: 20px 0px 0px 0px !important;}
+    td.pc-w620-spacing-20-0-0-0,th.pc-w620-spacing-20-0-0-0{margin: 0 !important;padding: 20px 0px 0px 0px !important;}
+    
+    .pc-w620-gridCollapsed-1 > tbody,.pc-w620-gridCollapsed-1 > tbody > tr,.pc-w620-gridCollapsed-1 > tr {display: inline-block !important;}
+    .pc-w620-gridCollapsed-1.pc-width-fill > tbody,.pc-w620-gridCollapsed-1.pc-width-fill > tbody > tr,.pc-w620-gridCollapsed-1.pc-width-fill > tr {width: 100% !important;}
+    .pc-w620-gridCollapsed-1.pc-w620-width-fill > tbody,.pc-w620-gridCollapsed-1.pc-w620-width-fill > tbody > tr,.pc-w620-gridCollapsed-1.pc-w620-width-fill > tr {width: 100% !important;}
+    .pc-w620-gridCollapsed-1 > tbody > tr > td,.pc-w620-gridCollapsed-1 > tr > td {display: block !important;width: auto !important;padding-left: 0 !important;padding-right: 0 !important;}
+    .pc-w620-gridCollapsed-1.pc-width-fill > tbody > tr > td,.pc-w620-gridCollapsed-1.pc-width-fill > tr > td {width: 100% !important;}
+    .pc-w620-gridCollapsed-1.pc-w620-width-fill > tbody > tr > td,.pc-w620-gridCollapsed-1.pc-w620-width-fill > tr > td {width: 100% !important;}
+    .pc-w620-gridCollapsed-1 > tbody > .pc-grid-tr-first > .pc-grid-td-first,pc-w620-gridCollapsed-1 > .pc-grid-tr-first > .pc-grid-td-first {padding-top: 0 !important;}
+    .pc-w620-gridCollapsed-1 > tbody > .pc-grid-tr-last > .pc-grid-td-last,pc-w620-gridCollapsed-1 > .pc-grid-tr-last > .pc-grid-td-last {padding-bottom: 0 !important;}
+    
+    .pc-w620-gridCollapsed-0 > tbody > .pc-grid-tr-first > td,.pc-w620-gridCollapsed-0 > .pc-grid-tr-first > td {padding-top: 0 !important;}
+    .pc-w620-gridCollapsed-0 > tbody > .pc-grid-tr-last > td,.pc-w620-gridCollapsed-0 > .pc-grid-tr-last > td {padding-bottom: 0 !important;}
+    .pc-w620-gridCollapsed-0 > tbody > tr > .pc-grid-td-first,.pc-w620-gridCollapsed-0 > tr > .pc-grid-td-first {padding-left: 0 !important;}
+    .pc-w620-gridCollapsed-0 > tbody > tr > .pc-grid-td-last,.pc-w620-gridCollapsed-0 > tr > .pc-grid-td-last {padding-right: 0 !important;}
+    
+    .pc-w620-tableCollapsed-1 > tbody,.pc-w620-tableCollapsed-1 > tbody > tr,.pc-w620-tableCollapsed-1 > tr {display: block !important;}
+    .pc-w620-tableCollapsed-1.pc-width-fill > tbody,.pc-w620-tableCollapsed-1.pc-width-fill > tbody > tr,.pc-w620-tableCollapsed-1.pc-width-fill > tr {width: 100% !important;}
+    .pc-w620-tableCollapsed-1.pc-w620-width-fill > tbody,.pc-w620-tableCollapsed-1.pc-w620-width-fill > tbody > tr,.pc-w620-tableCollapsed-1.pc-w620-width-fill > tr {width: 100% !important;}
+    .pc-w620-tableCollapsed-1 > tbody > tr > td,.pc-w620-tableCollapsed-1 > tr > td {display: block !important;width: auto !important;}
+    .pc-w620-tableCollapsed-1.pc-width-fill > tbody > tr > td,.pc-w620-tableCollapsed-1.pc-width-fill > tr > td {width: 100% !important;}
+    .pc-w620-tableCollapsed-1.pc-w620-width-fill > tbody > tr > td,.pc-w620-tableCollapsed-1.pc-w620-width-fill > tr > td {width: 100% !important;}
+    }
+    @media (max-width: 520px) {
+    table.pc-w520-spacing-0-0-50-0 {margin: 0px 0px 50px 0px !important;}
+    td.pc-w520-spacing-0-0-50-0,th.pc-w520-spacing-0-0-50-0{margin: 0 !important;padding: 0px 0px 50px 0px !important;}
+    .pc-w520-padding-27-30-27-30 {padding: 27px 30px 27px 30px !important;}
+    .pc-w520-padding-10-30-10-30 {padding: 10px 30px 10px 30px !important;}
+    }
+   
+    @media all { @font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 100; src: url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklWgyCR6T6A.woff') format('woff'), url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklWgyCR6T7g.woff2') format('woff2'); } @font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 200; src: url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklegzCR6T6A.woff') format('woff'), url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklegzCR6T7g.woff2') format('woff2'); } @font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 600; src: url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklbY0CR6T6A.woff') format('woff'), url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklbY0CR6T7g.woff2') format('woff2'); } @font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 300; src: url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklTYzCR6T6A.woff') format('woff'), url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklTYzCR6T7g.woff2') format('woff2'); } @font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 700; src: url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklY80CR6T6A.woff') format('woff'), url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklY80CR6T7g.woff2') format('woff2'); } @font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 500; src: url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklVozCR6T6A.woff') format('woff'), url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklVozCR6T7g.woff2') format('woff2'); } @font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 800; src: url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRkleg0CR6T6A.woff') format('woff'), url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRkleg0CR6T7g.woff2') format('woff2'); } @font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 900; src: url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklcE0CR6T6A.woff') format('woff'), url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklcE0CR6T7g.woff2') format('woff2'); } @font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 400; src: url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklWgzCR6T6A.woff') format('woff'), url('https://fonts.gstatic.com/s/vazirmatn/v13/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklWgzCR6T7g.woff2') format('woff2'); } @font-face { font-family: 'Noto Naskh Arabic'; font-style: normal; font-weight: 500; src: url('https://fonts.gstatic.com/s/notonaskharabic/v33/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwj85Upac0.woff') format('woff'), url('https://fonts.gstatic.com/s/notonaskharabic/v33/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwj85Upacy.woff2') format('woff2'); } @font-face { font-family: 'Noto Naskh Arabic'; font-style: normal; font-weight: 400; src: url('https://fonts.gstatic.com/s/notonaskharabic/v33/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwvc5Upac0.woff') format('woff'), url('https://fonts.gstatic.com/s/notonaskharabic/v33/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwvc5Upacy.woff2') format('woff2'); } @font-face { font-family: 'Noto Naskh Arabic'; font-style: normal; font-weight: 600; src: url('https://fonts.gstatic.com/s/notonaskharabic/v33/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwY8lUpac0.woff') format('woff'), url('https://fonts.gstatic.com/s/notonaskharabic/v33/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwY8lUpacy.woff2') format('woff2'); } @font-face { font-family: 'Noto Naskh Arabic'; font-style: normal; font-weight: 700; src: url('https://fonts.gstatic.com/s/notonaskharabic/v33/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwWslUpac0.woff') format('woff'), url('https://fonts.gstatic.com/s/notonaskharabic/v33/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwWslUpacy.woff2') format('woff2'); } }
