@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fa35fe23a3.js" crossorigin="anonymous"></script>
     <title>Home - Productivity Mantra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
@@ -16,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./stylesheets/customer-review.css">
     <link rel="stylesheet" href="./stylesheets/main-styles.css">
+    <link rel="stylesheet" href="./stylesheets/carousel.css">
 </head>
 <body>
     <nav class="website-navigation">
@@ -34,7 +36,7 @@
             <h1>
                 Find New Ways To <span >Hack</span> Your Productivity And Develop <span>Positive Habits</span> 
             </h1>
-            <object data="/images/illustration-1.svg" class="illustration-1"></object>
+            <object data="/images/man-on-computer.svg" class="illustration-1"></object>
         </section>
         <section class="second-section"> <!--Second Section of this page-->
             <div class="sub-second-section">
@@ -61,7 +63,7 @@
                 <p>
                     Turns out, discipline isn't the only key to bringing out the best in us. <br>It is our common experience that a little dose of inspiration and motivation from like-minded folks can help us stay on track. 
                     Whether you're aiming for fitness, crushing those resolutions, climbing the career ladder, learning a new language or simply becoming better at a skill, we have bite sized, daily tips on every possible aspect to help you stay focused.
-                    <br><br>Staying consistent and achieving any of these doesn't have to sound like hard work. <span style="font-style: italic; font-weight: 600; font-size: 1.6rem;">Remember, consistency trumps bursts of intensity.</span> The magic happens when we do the common things exceptionally well, every day.
+                    <br><br>Staying consistent and achieving any of these doesn't have to sound like hard work. <span style="font-style: italic; font-weight: 600; font-size: 1.6rem;">Remember, consistency trumps bursts of intensity.</span> <span style="color: #1761eb; font-size: inherit; font-weight: 500;">The magic happens when we do the common things exceptionally well, every day.</span>
                      <br><br>Here, we always encourage others to not beat themselves when it feels like they aren't sticking to their plan. Remember, that's normal. What is not is staying defeated and assuming you aren't good enough.                    
                 </p>
             </div>
@@ -93,7 +95,7 @@
                 <div class="book-features">
                     <div> <!--First feature-->
                         <h5>Boost your productivity</h5>
-                        <p>This will help conquer your to-do list in record time! ⚡️</p>
+                        <p>This will help you conquer your to-do list in record time! ⚡️</p>
                     </div>
                     <div> <!--Second feature-->
                         <h5>Minimize stress</h5>
@@ -108,6 +110,7 @@
                         <p>Time well claimed, life well-played.</p>
                     </div>
                 </div>
+                
             </div>
         </section>
 
@@ -116,97 +119,75 @@
             <p>
                 Whether you're a seasoned "go-getter" or just starting your journey towards a more fulfilling life, this e-book has something for everyone. Don't just take our word for it - see what other readers are saying:
             </p>
-            <section class="container"><!--Readers Review-->
-                <div class="review-card"><!--Review 1-->
-                    <object data="images/open-quote.svg" type="image/svg" class="open-quote">
-                        <img src="images/open-quote.svg" alt="Quote">
-                    </object>
-                    <p>
-                        "You break down complex ideas into simple and easy to follow strategies, which is complemented with interesting personal and everyday stories. I've never felt more in charge of my activities since joining this blog. Thanks"
-                    </p>
-                    <div class="customer-details">
-                        <img src="https://designmodo.com/startup/app/i/testimonial-2-1.jpg" alt="Marvin Meadows" class="customer-image">
-                        <h5>
-                            Marvin Meadows
-                        </h5>
+            <div class="container-wrapper"><!--This will help us position those buttons outside the container element-->
+                <!--The previous button-->
+                <button class="previous-button" id="previous-button" aria-label="Go to the Previous Review" >
+                    <img src="./icons/previousIcon.svg" alt="Go to the Previous Review" class="prevImg"> 
+                </button>
+
+                <section class="container"><!--Readers Review-->
+                    <div class="review-card"><!--Review 1-->
+                        <div class="top-details">
+                            <object data="images/open-quote.svg" type="image/svg" class="open-quote">
+                                <img src="images/open-quote.svg" alt="Quote">
+                            </object>
+                            <p>
+                                "You break down complex ideas into simple and easy to follow strategies, which is complemented with interesting personal and everyday stories. I've never felt more in charge of my activities since joining this blog. Thanks"
+                            </p>
+                        </div>
+                        
+                        <div class="customer-details">
+                            <img src="https://designmodo.com/startup/app/i/testimonial-2-1.jpg" alt="Marvin Meadows" class="customer-image">
+                            <h5>
+                                Marvin Meadows
+                            </h5>
+                        </div>
                     </div>
-                </div>
-        
-                <div class="review-card"><!--Review 2-->
-                    <object data="images/open-quote.svg" type="image/svg" class="open-quote">
-                        <img src="images/open-quote.svg" alt="Quote">
-                    </object>
-                    <p>
-                        "Your(Joseph's) book on time management really helped. After reading and implementing, I discovered that the everyday time constraints I usually complain about gradually but surely disappeared. I also noticed that the stress was self induced and a little organized planning learnt from your book really helped."
-                    </p>
-                    <div class="customer-details">
-                        <img src="https://designmodo.com/startup/app/i/testimonial-2-2.jpg" alt="Floyd Miles" class="customer-image">
-                        <h5>
-                            Floyd Miles
-                        </h5>
+            
+                    <div class="review-card"><!--Review 2-->
+                        <div class="top-details">
+                            <object data="images/open-quote.svg" type="image/svg" class="open-quote">
+                                <img src="images/open-quote.svg" alt="Quote">
+                            </object>
+                            <p>
+                                "Your(Joseph's) book on time management really helped. After reading and implementing, I discovered that the everyday time constraints I usually complain about gradually but surely disappeared. I also noticed that the stress was self induced and a little organized planning learnt from your book really helped."
+                            </p>
+                        </div>
+                        
+                        <div class="customer-details">
+                            <img src="https://designmodo.com/startup/app/i/testimonial-2-2.jpg" alt="Floyd Miles" class="customer-image">
+                            <h5>
+                                Floyd Miles
+                            </h5>
+                        </div>
                     </div>
-                </div>
-        
-                <div class="review-card"><!--Review 3-->
-                    <object data="images/open-quote.svg" type="image/svg" class="open-quote">
-                        <img src="images/open-quote.svg" alt="Quote">
-                    </object>
-                    <p>
-                        Joseph's blog isn't just about productivity. It's about reclaiming your sanity. His down-to-earth tips, peppered with hilarious anecdotes, are like having a wise friend whisper 'You got this!' in your ear every morning.
-                    </p>
-                    <div class="customer-details">
-                        <img src="https://designmodo.com/startup/app/i/testimonial-2-3.jpg" alt="Darrell Steward" class="customer-image">
-                        <h5>
-                            Darrell Steward
-                        </h5>
+            
+                    <div class="review-card"><!--Review 3-->
+                        <div class="top-details">
+                            <object data="images/open-quote.svg" type="image/svg" class="open-quote">
+                                <img src="images/open-quote.svg" alt="Quote">
+                            </object>
+                            <p>
+                                Joseph's blog isn't just about productivity. It's about reclaiming your sanity. His down-to-earth tips, peppered with hilarious anecdotes, are like having a wise friend whisper 'You got this!' in your ear every morning.
+                            </p>
+                        </div>
+                        
+                        <div class="customer-details">
+                            <img src="https://designmodo.com/startup/app/i/testimonial-2-3.jpg" alt="Darrell Steward" class="customer-image">
+                            <h5>
+                                Darrell Steward
+                            </h5>
+                        </div>
                     </div>
-                </div>
-        
-                <div class="review-card"><!--Review 4-->
-                    <object data="images/open-quote.svg" type="image/svg" class="open-quote">
-                        <img src="images/open-quote.svg" alt="Quote">
-                    </object>
-                    <p>
-                        I devoured Joseph's time management book like a starving traveler reaching an oasis. It wasn't just another 'to-do list' manifesto; it was a gentle guide to understanding how I tick. Suddenly, my overflowing inbox stopped feeling like a monster and became a well-organized garden, thanks to his simple, actionable plans. Productivity isn't a chore anymore, it's a dance!
-                    </p>
-                    <div class="customer-details">
-                        <img src="https://designmodo.com/startup/app/i/testimonial-2-4.jpg" alt="Leslie Alexander" class="customer-image">
-                        <h5>
-                            Leslie Alexander
-                        </h5>
-                    </div>
-                </div>
-        
-                <div class="review-card"><!--Review 5-->
-                    <object data="images/open-quote.svg" type="image/svg" class="open-quote">
-                        <img src="images/open-quote.svg" alt="Quote">
-                    </object>
-                    <p>
-                        "I'm a chronic procrastinator, so when I say Joseph's blog changed my life, it's no exaggeration. His strategies are clear, practical, and most importantly, kind. He doesn't shame my bad habits, he guides me past them with encouraging stories and relatable examples. Now, I look forward to tackling my tasks, and guess what? I actually get them done – with time to spare for the things I truly love!
-                    </p>
-                    <div class="customer-details">
-                        <img src="https://designmodo.com/startup/app/i/testimonial-2-5.jpg" alt="Theresa Webb" class="customer-image">
-                        <h5>
-                            Theresa Webb
-                        </h5>
-                    </div>
-                </div>
-        
-                <div class="review-card"><!--Review 6-->
-                    <object data="images/open-quote.svg" type="image/svg" class="open-quote">
-                        <img src="images/open-quote.svg" alt="Quote">
-                    </object>
-                    <p>
-                        As a chronic procrastinator(I painfully admit😅), I thought I was doomed to a life of deadlines and chaos. Then this book entered my life like a friendly productivity fairy godmother. Now, I'm actually getting things done, and even enjoying the process!
-                    </p>
-                    <div class="customer-details">
-                        <img src="https://designmodo.com/startup/app/i/testimonial-2-6.jpg" alt="Dianne Russell" class="customer-image">
-                        <h5>
-                            Dianne Russell
-                        </h5>
-                    </div>
-                </div>
-            </section><!--End of Review Section-->
+                </section><!--End of Review Section-->
+                
+                <button class="next-button" id="next-button" aria-label="Go to the Next Review" >
+                    <img src="./icons/nextIcon.svg" alt="Go to the Next Review" class="nextImg"> 
+                </button>
+
+
+            </div>
+            
         </section><!--End of Fifth Section-->
         
         <form class="newsletter-section" id="newsletter-section"><!--Newsletter Form - Sixth Section-->
@@ -221,7 +202,7 @@
                 </div>
                 
                 <button>
-                    Send E-book
+                    Get E-book
                 </button>
             </div>
             <p>I will never share your data</p>
@@ -262,33 +243,41 @@
     </main>
 
     <footer><!--Eight Section-->
-        <div><!--Resources Section-->
+        <div><!--Resources Section | Section 1-->
             <h4>Resources</h4>
             <a href="#">Blog</a>
             <a href="#">Daily Inspiration</a>
             <a href="#">Recommended</a>
         </div>
 
-        <div>
+        <div><!--About Section | Section 2-->
             <h4>About</h4>
+            <a href="#">Mission</a>
             <a href="#">Privacy</a>
             <a href="#">Terms</a>
             <a href="#">Contact us</a>
         </div>
 
-        <form class="second-form"><!--Second Form, this time for Newsletter-->
+        <form class="second-form"><!--Second Form, this time for Newsletter | Section 3-->
             <h3>Newsletter</h3>
             <P>Be the first to receive our weekly articles directly in your mailbox</P>
             
             <div class="second-input-section"><!--Input Field Section-->
-                <img src="./icons/email-icon-input-section.png" type="image/png" class="email-icon"></img>
+                <div>
+                    <img src="./icons/email-icon-input-section.png" type="image/png" class="email-icon"></img>
+                </div>
                 <input type="email" class="second-input" id="second-input" placeholder="Email address">
+                <button class="sendIconButton" id="sendIconButton"><!--Send Icon DIV-->
+                    <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffffff" stroke-width="1.5"><g clip-path="url(#clip0_4086_8473)"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.84647 7.15123C1.54566 7.21608 1.31498 7.45811 1.26464 7.7617C1.2143 8.06528 1.35452 8.36881 1.6183 8.52729L8.13474 12.4421L14.3544 8.08705C14.6938 7.84947 15.1614 7.93193 15.399 8.27123C15.6366 8.61054 15.5541 9.0782 15.2148 9.31578L8.99537 13.6707L10.4455 21.1339C10.5042 21.436 10.7415 21.6715 11.044 21.7281C11.3465 21.7846 11.6528 21.6506 11.8166 21.3901L22.7919 3.93893C22.9526 3.68349 22.9445 3.35665 22.7714 3.10947C22.5983 2.86228 22.294 2.7429 21.999 2.80649L1.84647 7.15123Z" fill="#ffffff"></path></g><defs><clipPath id="clip0_4086_8473"><rect width="32" height="32" fill="white"></rect></clipPath></defs></svg>
+                </button>
             </div>
-            <button class="sendIconButton" id="sendIconButton"><!--Send Icon DIV-->
-                <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffffff" stroke-width="1.5"><g clip-path="url(#clip0_4086_8473)"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.84647 7.15123C1.54566 7.21608 1.31498 7.45811 1.26464 7.7617C1.2143 8.06528 1.35452 8.36881 1.6183 8.52729L8.13474 12.4421L14.3544 8.08705C14.6938 7.84947 15.1614 7.93193 15.399 8.27123C15.6366 8.61054 15.5541 9.0782 15.2148 9.31578L8.99537 13.6707L10.4455 21.1339C10.5042 21.436 10.7415 21.6715 11.044 21.7281C11.3465 21.7846 11.6528 21.6506 11.8166 21.3901L22.7919 3.93893C22.9526 3.68349 22.9445 3.35665 22.7714 3.10947C22.5983 2.86228 22.294 2.7429 21.999 2.80649L1.84647 7.15123Z" fill="#ffffff"></path></g><defs><clipPath id="clip0_4086_8473"><rect width="32" height="32" fill="white"></rect></clipPath></defs></svg>
-            </button>
+            
         </form>
     </footer>
     <!--<video loading="lazy" muted="muted" src="https://cdnl.iconscout.com/lottie/premium/thumb/send-mail-9675666-7922379.mp4" type="video/mp4" autoplay="autoplay" loop="loop"></video>-->
+    
+
+
+    <script src="./general-js/customer-review-carousel.js"></script>
 </body>
 </html>
