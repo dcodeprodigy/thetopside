@@ -16,7 +16,7 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
 
 
 /* Navigation header styling */
-.website-navigation{
+.website-navigation-section{
     height: 7.5rem;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
     background-color: #FFf;
@@ -30,6 +30,19 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
     right: 0;
     z-index: 100;
 }
+
+.website-navigation-section nav {
+    display: flex;
+    flex-direction: row;
+}
+.website-navigation-section nav a{
+    display: none;
+    flex-direction: row;
+    font-size: 1.6rem;
+    color: #02102b;
+    text-decoration: none;
+}
+
 .menu-button{
     background-color:black;
     width: 50px;
@@ -43,11 +56,68 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
     height: 40%;
 }
 
-.website-logo{
+.website-navigation-section .website-logo{
     margin-left: -1rem;
+}
+
+
+.guage{
+    position: sticky;
+    top: 7.5rem;
+    background-color: #093b97;
+    height: 3px;
+    width: 0;
+}
+
+
+@media(min-width:830px){
+    .menu-button{
+        display: none;
+    }
+
+    .website-navigation-section .website-logo{
+        padding-left: 10px;
+    }
+
+    .website-navigation-section nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .website-navigation-section nav a{
+        display: flex;
+        margin: 0 15px;
+        position: relative;
+        
+    }
+
+    .website-navigation-section nav a::after{
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        background-color: #093b97;
+        width: 0;
+        height: 3px;
+
+        transition: width 0.3s ease-in-out;
+    }
+
+    .website-navigation-section nav a:hover::after{
+        width: 100%;
+    }
+
+    .website-navigation-section nav a:last-of-type{
+        margin-right: 0;
+    }
+    }
     
 
-}
+    
+
+
+
+
+
 
 /* The main content styling */
 /* First section of the website */
@@ -211,6 +281,9 @@ h1, h1 span{ /* Header 1 font-sizes */
 .fourth-section p{
     font-size: 1.8rem;
     text-align: center;
+    max-width: 50rem;
+    padding: 1rem;
+    margin: auto;
 }
 .book-features-container{
     display: flex;
@@ -481,8 +554,11 @@ h1, h1 span{ /* Header 1 font-sizes */
 
 
 .moderators p{
+    max-width: 60rem;
+    padding: 1.5rem;
     font-size: calc(1.5rem + .15vw);
     font-family: Vazirmatn, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: auto;
     margin-top: 0;
     color: rgba(39, 40, 42, 0.7);
     text-align: center;
@@ -738,11 +814,3 @@ footer div a:hover{
         padding: 0 20%;
     }
 }
-
-
-
-/* For our footer, it takes away the "display:grid" property so that the */
-@media(max-width:574px){
-    .second-form .second-input-section .second-input{
-        
-    }}    

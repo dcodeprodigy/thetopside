@@ -20,15 +20,20 @@
     <link rel="stylesheet" href="./stylesheets/carousel.css">
 </head>
 <body>
-    <nav class="website-navigation">
+    <header class="website-navigation-section">
         <button class="menu-button">
             <i class="fa-solid fa-bars"></i>
         </button>
         <img src="/icons/logo-dark.png" class="website-logo" id="hey"><!--Website logo and all laat-->
-        <div> <!--Keeps the company logo at the middle and can be used to add the other navigation stuffs-->
-
-        </div>
-    </nav>
+        <nav> <!--Keeps the company logo at the middle and can be used to add the other navigation stuffs-->
+            <a href="#second-form">Newsletter</a>
+            <a href="#">Blog</a>
+            <a href="#">Daily Inspiration</a>
+            <a href="#">Contact us</a>
+        </nav>
+        
+    </header>
+    <div class="guage"></div>
 
     <main>
         <section class="first-section"> <!--First section of this page-->
@@ -88,7 +93,7 @@
             <h2>
                 In this FREE mini-ebook, 
             </h2>
-            <p>you'll unlock bite-sized tips and strategies to squeeze the most out of your 24 hours. These practical hacks will help:
+            <p> You'll unlock bite-sized tips and strategies to squeeze the most out of your 24 hours. These practical hacks will help:
             </p>
             <div class="book-features-container"> <!--This should work for the desktop version if we use display flex-->
                 <img src="/images/book-mockup.png" class="book-mockup" alt="image of the FREE ebook">
@@ -131,8 +136,9 @@
                             <object data="images/open-quote.svg" type="image/svg" class="open-quote">
                                 <img src="images/open-quote.svg" alt="Quote">
                             </object>
+                            <h3>A Long-Term Investment</h3>
                             <p>
-                                "You break down complex ideas into simple and easy to follow strategies, which is complemented with interesting personal and everyday stories. I've never felt more in charge of my activities since joining this blog. Thanks"
+                                "This is the kind of book you'll keep coming back to as your life and goals change. It teaches you timeless principles of time management that pay dividends for years to come."
                             </p>
                         </div>
                         
@@ -149,8 +155,9 @@
                             <object data="images/open-quote.svg" type="image/svg" class="open-quote">
                                 <img src="images/open-quote.svg" alt="Quote">
                             </object>
+                            <h3>Beyond Productivity</h3>
                             <p>
-                                "Your(Joseph's) book on time management really helped. After reading and implementing, I discovered that the everyday time constraints I usually complain about gradually but surely disappeared. I also noticed that the stress was self induced and a little organized planning learnt from your book really helped."
+                                "This book isn't just about squeezing more into your day. It helped me understand the importance of prioritizing and aligning my time use with my values. A total eye-opener!"
                             </p>
                         </div>
                         
@@ -167,8 +174,9 @@
                             <object data="images/open-quote.svg" type="image/svg" class="open-quote">
                                 <img src="images/open-quote.svg" alt="Quote">
                             </object>
+                            <h3>Clarity & Actionable Advice</h3>
                             <p>
-                                Joseph's blog isn't just about productivity. It's about reclaiming your sanity. His down-to-earth tips, peppered with hilarious anecdotes, are like having a wise friend whisper 'You got this!' in your ear every morning.
+                                This book offers a clear and practical approach to time management. I love that it's not just filled with theory – there are tons of actionable techniques that I can start using right away.
                             </p>
                         </div>
                         
@@ -209,7 +217,7 @@
             
         </form>
 
-        <section class="moderators"><!--Moderators - Seventh Section-->
+        <section class="moderators seventh-section"><!--Moderators - Seventh Section-->
             <div><!--First Section of Moderators-->
                 <h2>Meet the BRAINs behind this project</h2>
             </div>
@@ -258,7 +266,7 @@
             <a href="#">Contact us</a>
         </div>
 
-        <form class="second-form"><!--Second Form, this time for Newsletter | Section 3-->
+        <form class="second-form" id="second-form"><!--Second Form, this time for Newsletter | Section 3-->
             <h3>Newsletter</h3>
             <P>Be the first to receive our weekly articles directly in your mailbox</P>
             
@@ -278,6 +286,7 @@
     
 
 
+    <script src="./general-js/main.js"></script>
     <script src="./general-js/customer-review-carousel.js"></script>
 </body>
 </html>

@@ -1,10 +1,16 @@
 const reviewCard = document.querySelectorAll(".review-card");
 const prevBtn = document.getElementById("previous-button");
 const nextBtn = document.getElementById("next-button");
+const container = document.querySelector(".container")
 
 
+
+
+
+// Controlling the scroll of out carousel
 nextBtn.addEventListener("click", nextSlide);
 let currentVisibleSlide = 1;
+prevBtn.disabled = true;
 function nextSlide(){
     if(currentVisibleSlide === 1){
          for(let s = 0; s <= 2; s++){
@@ -29,16 +35,28 @@ function nextSlide(){
 prevBtn.addEventListener("click", prevSlide);
 function prevSlide(){
     if(currentVisibleSlide === 3){
-        reviewCard[0].style.transform = "translateX(-100%) translateX(-10px)";
-        reviewCard[1].style.transform = "translateX(-100%) translateX(-10px)";
-        reviewCard[2].style.transform = "translateX(-100%) translateX(-10px)";
+        for(let i = 0; i <=2; i++ ){
+            reviewCard[i].style.transform = "translateX(-100%) translateX(-10px)";
+        }
         nextBtn.disabled = false;
         currentVisibleSlide--;
     }else if(currentVisibleSlide === 2){
-        reviewCard[0].style.transform = "translateX(-0%) translateX(-0px)";
-        reviewCard[1].style.transform = "translateX(-0%) translateX(-0px)";
-        reviewCard[2].style.transform = "translateX(-0%) translateX(-0px)";
+        for(let i = 0; i <=2; i++ ){
+            reviewCard[i].style.transform = "translateX(-0%) translateX(-0px)";
+        }
         currentVisibleSlide--;
         prevBtn.disabled = true;
     }
+}
+
+
+
+
+// For Scrolling with fingers
+
+container.addEventListener("scroll", scrollBehaviour);
+function scrollBehaviour(){
+    const yay = this.scrollLeft;
+    console.log(yay)
+    
 }
