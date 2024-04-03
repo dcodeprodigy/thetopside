@@ -48,8 +48,3 @@ function prevSlide(){
         prevBtn.disabled = true;
     }
 }
-
-
-
-
-// For Scrolling with fingers

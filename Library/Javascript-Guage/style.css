@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: "Noto Naskh Arabic", Arial;
+    font-optical-sizing: auto;
+    font-style: normal; 
+}
+
+body, html{
+    margin: 0;
+}
+
+.website-navigation-section{
+    height: 7.5rem;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    background-color: #FFf;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.guage{
+    position: sticky;
+    top: 7.5rem;
+    background-color: #093b97;
+    height: 3px;
+    width: 0;
+}

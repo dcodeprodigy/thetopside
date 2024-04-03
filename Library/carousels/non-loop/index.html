@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Loop JS Carousel</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container-wrapper"><!--This will help us position those buttons outside the container element-->
+        <!--The previous button-->
+        <button class="previous-button" id="previous-button" aria-label="Go to the Previous Review" >
+            <img src="./icons/previousIcon.svg" alt="Go to the Previous Review" class="prevImg"> 
+        </button>
+
+        <section class="container"><!--Readers Review-->
+            <div class="review-card"><!--Review 1-->
+                <div class="top-details">
+                    <object data="images/open-quote.svg" type="image/svg" class="open-quote">
+                        <img src="images/open-quote.svg" alt="Quote">
+                    </object>
+                    <h3>A Long-Term Investment</h3>
+                    <p>
+                        "This is the kind of book you'll keep coming back to as your life and goals change. It teaches you timeless principles of time management that pay dividends for years to come."
+                    </p>
+                </div>
+                
+                <div class="customer-details">
+                    <img src="https://designmodo.com/startup/app/i/testimonial-2-1.jpg" alt="Marvin Meadows" class="customer-image">
+                    <h5>
+                        Marvin Meadows
+                    </h5>
+                </div>
+            </div>
+    
+            <div class="review-card"><!--Review 2-->
+                <div class="top-details">
+                    <object data="images/open-quote.svg" type="image/svg" class="open-quote">
+                        <img src="images/open-quote.svg" alt="Quote">
+                    </object>
+                    <h3>Beyond Productivity</h3>
+                    <p>
+                        "This book isn't just about squeezing more into your day. It helped me understand the importance of prioritizing and aligning my time use with my values. A total eye-opener!"
+                    </p>
+                </div>
+                
+                <div class="customer-details">
+                    <img src="https://designmodo.com/startup/app/i/testimonial-2-2.jpg" alt="Floyd Miles" class="customer-image">
+                    <h5>
+                        Floyd Miles
+                    </h5>
+                </div>
+            </div>
+    
+            <div class="review-card"><!--Review 3-->
+                <div class="top-details">
+                    <object data="images/open-quote.svg" type="image/svg" class="open-quote">
+                        <img src="images/open-quote.svg" alt="Quote">
+                    </object>
+                    <h3>Clarity & Actionable Advice</h3>
+                    <p>
+                        This book offers a clear and practical approach to time management. I love that it's not just filled with theory – there are tons of actionable techniques that I can start using right away.
+                    </p>
+                </div>
+                
+                <div class="customer-details">
+                    <img src="https://designmodo.com/startup/app/i/testimonial-2-3.jpg" alt="Darrell Steward" class="customer-image">
+                    <h5>
+                        Darrell Steward
+                    </h5>
+                </div>
+            </div>
+        </section><!--End of Review Section-->
+        
+        <button class="next-button" id="next-button" aria-label="Go to the Next Review" >
+            <img src="./icons/nextIcon.svg" alt="Go to the Next Review" class="nextImg"> 
+        </button>
+
+
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,30 +1,90 @@
 const menuBar = document.querySelector(".menu-button");
 const links = document.querySelectorAll(".website-navigation-section nav a")
 const body = document.querySelector("body");
+const html = document.querySelector("html");
 const guage =  document.querySelector(".guage");
+const sideBar = document.querySelector(".side-bar");
+const newsletterLink = document.querySelector(".newsletter-link");
+const backDropDiv = document.querySelector(".back-drop-div");
 
 
 
-menuBar.addEventListener("click", openMenuBar);
+// To open the menu bar at the navigation section
+menuBar.addEventListener("click", ()=>{
+    if(sideBar.style.display === "block"){
+        sideBar.style.display = "none"
+    } else {
+        sideBar.style.display = "block";
+    }
+});
 
-function openMenuBar(){
-    
-}
+newsletterLink.addEventListener("click", ()=>{
+    if(sideBar.style.display === "none"){
+        sideBar.style.display = "block"
+    } else {
+        sideBar.style.display = "none";
+    }
+});
+
+// Close the menu by clicking anypart of the body
+// html.addEventListener("click", ()=>{
+//     if(sideBar.style.display === "block"){
+//         sideBar.style.display = "none";
+//     }
+// });
 
 
-// For showing the scroll length of the page when the user scrolls
+
+// Set Timeout for the menu when open
+// if(sideBar.style.display === block){
+//     setTimeout(() => {
+//         sideBar.style.display = "none"
+//     }, 2000);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// For adjusting the width of the top guage which indicates the level the user has scrolled to
+let grossBodyHeight;
+let currentScrollHeight;
+let netBodyHeight;
+let percentageOfPageScrolled;
+
 window.addEventListener("scroll", ()=>{
-    let grossWindowHeight = Number(body.scrollHeight); // 6405  8386 //This is the gross height of the body element in the page in pixels.
-    let currentScrollHeight = Number(window.scrollY); // 5764  7745 //This is the current scroll height as we keep scrolling, it would keep updating
+    grossBodyHeight = Number(body.scrollHeight); // 6405  8386 
+    // This gives the total scrollable height of the body element.
 
-    // console.log(body.scrollHeight);
-    // console.log(window.scrollY);
+    currentScrollHeight = Number(window.scrollY); // 5764  7745 => These figures were used to get a constant(641), regardless of the height of the window, that 641px is constant.
+    // This gives the current scroll height. It updates as we keep scrolling.
 
-    let realHeight = Number(grossWindowHeight - 641) ; //This is the height after we subtract the constant value of 641 pixel. This is the descripancy betwen the body's height and the current scroll height. We did this in order to be able to calculate the percentage of the scrolling.
+    netBodyHeight = Number(grossBodyHeight - 641) ; // This is the height after we subtract the constant value of 641 pixel. This(641) is the descripancy between the body's scrollable height and the current scroll height. We did this in order to be able to calculate the percentage of the height we have scrolled to.
 
-    // console.log(realHeight);
-    let percentage = (currentScrollHeight/realHeight) * 100;
-    console.log(percentage);
-    guage.style.width = `${percentage}%`;
-//    console.log(yay)
+    percentageOfPageScrolled = (currentScrollHeight/netBodyHeight) * 100;
+    guage.style.width = `${percentageOfPageScrolled}%`;
+
 })

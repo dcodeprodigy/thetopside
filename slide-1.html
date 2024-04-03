@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      max-width: 70%;
+      height: 70%;
+      
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <swiper-container class="mySwiper" pagination="true" pagination-type="progressbar" navigation="true">
+    <swiper-slide class="review-card">
+        <object data="images/open-quote.svg" type="image/svg" class="open-quote">
+            <img src="images/open-quote.svg" alt="Quote">
+        </object>
+        <p>
+            "You break down complex ideas into simple and easy to follow strategies, which is complemented with interesting personal and everyday stories. I've never felt more in charge of my activities since joining this blog. Thanks"
+        </p>
+        <div class="customer-details">
+            <img src="https://designmodo.com/startup/app/i/testimonial-2-1.jpg" alt="Marvin Meadows" class="customer-image">
+            <h5>
+                Marvin Meadows
+            </h5>
+        </div>
+    </swiper-slide>
+    <swiper-slide>
+        Slide 2
+    </swiper-slide>
+    <swiper-slide>
+        Slide 3
+    </swiper-slide>
+    <swiper-slide>
+        Slide 4
+    </swiper-slide>
+    <swiper-slide>Slide 5</swiper-slide>
+    <swiper-slide>Slide 6</swiper-slide>
+    <swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide>Slide 8</swiper-slide>
+    <swiper-slide>Slide 9</swiper-slide>
+  </swiper-container>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</body>
+
+</html>

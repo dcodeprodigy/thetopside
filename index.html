@@ -21,29 +21,41 @@
 </head>
 <body>
     <header class="website-navigation-section">
-        <button class="menu-button">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <img src="/icons/logo-dark.png" class="website-logo" id="hey"><!--Website logo and all laat-->
-        <nav> <!--Keeps the company logo at the middle and can be used to add the other navigation stuffs-->
+        <nav> <!--Keeps the company logo at the middle when on display none-->
             <a href="#second-form">Newsletter</a>
             <a href="#">Blog</a>
             <a href="#">Daily Inspiration</a>
             <a href="#">Contact us</a>
         </nav>
-        
+        <img src="/icons/logo-dark.png" class="website-logo" id="hey"><!--Website logo-->
+        <button class="menu-button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </header>
+    <!-- <section class="side-bar-section"> -->
+        <div class="side-bar">
+            <a href="#second-form" class="newsletter-link" id="">Newsletter</a>
+            <a href="#" class="" id="">Our Blog</a>
+            <a href="#" class="" id="">Daily Inspiration</a>
+            <a href="#" class="" id="">Contact us</a>
+        </div>
+        <!-- <div class="back-drop-div"></div> -->
+    <!-- </section> -->
     <div class="guage"></div>
 
     <main>
         <section class="first-section"> <!--First section of this page-->
-            
-            <h1>
-                Find New Ways To <span >Hack</span> Your Productivity And Develop <span>Positive Habits</span> 
-            </h1>
+            <section class="sub-first-section">
+                <h1>
+                    Everything <span>Scientific</span> <br>&<br> <span>Practical</span> You Need to Grow.
+                </h1>
+                <p class="sub-heading">Find New Ways to Hack Your Productivity and Develop Positive Habits</p>
+                <button class="get-started">Get Started</button>
+            </section>
+
             <object data="/images/man-on-computer.svg" class="illustration-1"></object>
         </section>
-        <section class="second-section"> <!--Second Section of this page-->
+        <section class="second-section" id="our-mission"> <!--Second Section of this page-->
             <div class="sub-second-section">
                 <object data="./images/community-icon.svg" type="image/svg" class="community-icon">
                     <img src="./images/community-icon.svg" class="community-icon">
@@ -68,7 +80,8 @@
                 <p>
                     Turns out, discipline isn't the only key to bringing out the best in us. <br>It is our common experience that a little dose of inspiration and motivation from like-minded folks can help us stay on track. 
                     Whether you're aiming for fitness, crushing those resolutions, climbing the career ladder, learning a new language or simply becoming better at a skill, we have bite sized, daily tips on every possible aspect to help you stay focused.
-                    <br><br>Staying consistent and achieving any of these doesn't have to sound like hard work. <span style="font-style: italic; font-weight: 600; font-size: 1.6rem;">Remember, consistency trumps bursts of intensity.</span> <span style="color: #1761eb; font-size: inherit; font-weight: 500;">The magic happens when we do the common things exceptionally well, every day.</span>
+                    <br><br>Staying consistent and achieving any of these doesn't have to sound like hard work. <span style="font-style: normal; font-weight: 700; font-size: 1.6rem; font-family: Vazirmatn;">Remember, consistency trumps bursts of intensity.</span> 
+                    The magic happens when we do the common things exceptionally well, every day.
                      <br><br>Here, we always encourage others to not beat themselves when it feels like they aren't sticking to their plan. Remember, that's normal. What is not is staying defeated and assuming you aren't good enough.                    
                 </p>
             </div>
@@ -253,17 +266,17 @@
     <footer><!--Eight Section-->
         <div><!--Resources Section | Section 1-->
             <h4>Resources</h4>
-            <a href="#">Blog</a>
-            <a href="#">Daily Inspiration</a>
-            <a href="#">Recommended</a>
+            <a href="#">Blog  <span class="coming-soon">  / Coming Soon</span></a>
+            <a href="#">Daily Inspiration  <span class="coming-soon">  / Coming Soon</span></a>
+            <a href="#">Recommended  <span class="coming-soon">  / Coming Soon</span></a>
         </div>
 
         <div><!--About Section | Section 2-->
             <h4>About</h4>
-            <a href="#">Mission</a>
+            <a href="#our-mission">Mission</a>
             <a href="#">Privacy</a>
             <a href="#">Terms</a>
-            <a href="#">Contact us</a>
+            <a href="mailto:josephalexconsulting@gmail.com">Contact us</a>
         </div>
 
         <form class="second-form" id="second-form"><!--Second Form, this time for Newsletter | Section 3-->

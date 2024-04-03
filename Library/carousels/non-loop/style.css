@@ -1,0 +1,112 @@
+.container-wrapper{
+    max-width: 70rem;
+    padding: 0 3rem;
+    margin: auto;
+    position: relative;
+}
+.container{
+    display: flex;
+    max-width: 60rem;
+    background-color: #131316;
+    padding: 0;
+    margin: auto;
+    font-family: "Poppins", Arial;
+    font-size: 14px; 
+    overflow: hidden;
+    
+
+}
+.review-card{
+    /* overflow: auto; */
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    margin: 0 1rem 0 0;
+    padding: 10px 16px;
+    border: 2px solid #085fe286;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; /* Justify Content acts in the vertical direction when we add "flex-direction: column". This justify content helps in positioning/giving consistent spacing in-between the top-review part and the  bottom cusomer name part */
+    flex-shrink: 0; /* Stops the review cards from shrinking and not overflowing */
+    
+}
+
+
+.previous-button, .next-button{
+    width: 5rem;
+    position: absolute;
+    top: 35%;
+    padding: 2rem 1rem;
+    border: 0;
+    background-color: #13131600;
+    cursor: pointer;
+}
+
+.previous-button:focus, .next-button:focus{
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+}
+
+
+
+.previous-button{
+    left: -2.5rem;
+}
+
+.next-button{
+    right: -2.5rem;
+
+}
+
+.prevImg, .nextImg{
+    max-width: 80%;
+}
+
+
+
+
+
+.fifth-section .review-card .top-details p{
+    margin: 1rem 0 !important;
+    text-align: left !important;
+    font-weight: 400 !important;
+    font-family: Vazirmatn, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.5rem;
+}
+
+.review-card .top-details .open-quote, .review-card .top-details .open-quote img{
+    width: 50px;
+}
+
+.review-card .top-details h3{
+    margin: 0.8rem 0;
+    font-size: 1.6rem;
+    letter-spacing: 1.2px;
+}
+
+.customer-details img, .customer-details h5{
+    display: inline-block;
+    vertical-align: middle;
+}
+.customer-details img{
+    border-radius: 50%;
+}
+.customer-details h5{
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+
+
+
+/* Sliding to the Next styling with Javascript */
+.slideTo2ndCard{
+   transform: translate(-100%) translate(-10px);
+}
+
+.slideTo3rdCard{
+    transform: translate(-200%) translate(-20px);
+ }
+
+
