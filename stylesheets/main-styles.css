@@ -27,7 +27,7 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
     height: 7.5rem;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
     background-color: #fcfcfc;
-    padding: 0 2.5rem;
+    padding: 0 4.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,7 +51,7 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
 }
 
 .menu-button{
-    background-color:black;
+    background-color:#090979;
     width: 50px;
     height: 50px;
     border: none;
@@ -202,20 +202,26 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
 /* First section of the website */
 .first-section{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-content: center; */
     width: 100%;
     /* min-height: 100dvh; */
     margin: auto;
-    padding: 0 1.2rem;
+    /* padding: 0 1.2rem; */
+    background: rgb(9,9,121);
+    background: -moz-radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(2,16,43,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(2,16,43,1) 100%);
+    background: radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(2,16,43,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090979",endColorstr="#02102b",GradientType=1);
+    /* background-color: #02102b; */
 }
 h1{
-    color:#131316;
+    color:#fff;
     text-size-adjust: 100%;
     font-family: Noto Naskh arabic;
     font-weight: 700;
-    letter-spacing: -1.3264px;
+    /* letter-spacing: -1px; */
     line-height: 1.25;
     text-align: center;
     padding: 0 1rem;
@@ -225,7 +231,7 @@ h1{
     margin-right: 0;
 }
 h1 span{
-    color: #27AE60;
+    color: #0df06b;
 }
 h1, h1 span{ /* Header 1 font-sizes */
     font-size: 3.6rem;
@@ -234,12 +240,13 @@ h1, h1 span{ /* Header 1 font-sizes */
 .first-section .sub-heading{
     padding: 0 1rem;
     /* font-family: "Noto Naskh Arabic", Arial; */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: roboto;
     font-size: 1.8rem;
     text-align: center;
     line-height: 1.15;
     margin-top: 0;
     margin-bottom: 3rem;
+    color: #fff;
 }
 
 .get-started{
@@ -254,10 +261,16 @@ h1, h1 span{ /* Header 1 font-sizes */
     color: #fff;
     padding: 1rem 3rem;
     cursor: pointer;
+    z-index: 2;
+
+    transition: box-shadow 1s;
 }
 
 .get-started:hover{
     background-color: #0351e2;
+    border-radius: 5px;
+    box-shadow:  0px 0px 9px #35343418,
+                0px 0px 9px #35343418;
 }
 
 .get-started:active{
@@ -265,7 +278,7 @@ h1, h1 span{ /* Header 1 font-sizes */
 }
 
 .illustration-1{
-    max-width: 100vw;
+    max-width: 40%;
     margin: auto;
     margin-top: 10px;
 
@@ -502,7 +515,17 @@ h1, h1 span{ /* Header 1 font-sizes */
 
 /* Fifth Section */
 .fifth-section{
-    background-color: #131316;
+    /* background: rgb(9,9,121);
+    background: -moz-radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(2,16,43,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(2,16,43,1) 100%);
+    background: radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(2,16,43,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090979",endColorstr="#02102b",GradientType=1); */
+
+    background: rgb(9,9,121);
+    background: -moz-radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(2,16,43,1) 52%);
+    background: -webkit-radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(2,16,43,1) 52%);
+    background: radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(2,16,43,1) 52%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090979",endColorstr="#02102b",GradientType=1);
     padding: 3.5rem 2.5rem;
     max-width: 100vw;
     margin: 0;
