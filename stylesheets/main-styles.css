@@ -204,11 +204,10 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* align-content: center; */
-    width: 100%;
+    width: 100vw;
+    padding: 30px 5%;
     /* min-height: 100dvh; */
     margin: auto;
-    /* padding: 0 1.2rem; */
     background: rgb(9,9,121);
     background: -moz-radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(2,16,43,1) 100%);
     background: -webkit-radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(2,16,43,1) 100%);
@@ -216,6 +215,14 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090979",endColorstr="#02102b",GradientType=1);
     /* background-color: #02102b; */
 }
+
+.sub-fs{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 10rem;
+}
+
 h1{
     color:#fff;
     text-size-adjust: 100%;
@@ -223,10 +230,9 @@ h1{
     font-weight: 700;
     /* letter-spacing: -1px; */
     line-height: 1.25;
-    text-align: center;
-    padding: 0 1rem;
-    margin-top: 13rem;
-    margin-bottom: 3rem;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 1rem;
     margin-left: 0;
     margin-right: 0;
 }
@@ -234,15 +240,14 @@ h1 span{
     color: #0df06b;
 }
 h1, h1 span{ /* Header 1 font-sizes */
-    font-size: 3.6rem;
+    font-size: 5.2rem;
 }
 
 .first-section .sub-heading{
     padding: 0 1rem;
-    /* font-family: "Noto Naskh Arabic", Arial; */
-    font-family: roboto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.8rem;
-    text-align: center;
+    text-align: left;
     line-height: 1.15;
     margin-top: 0;
     margin-bottom: 3rem;
@@ -250,8 +255,7 @@ h1, h1 span{ /* Header 1 font-sizes */
 }
 
 .get-started{
-    margin: auto;
-    max-width: 500px;
+    max-width: 150px;
     letter-spacing: 1.25px;
     font-size: 1.6rem;
     font-weight: 700;
@@ -259,7 +263,7 @@ h1, h1 span{ /* Header 1 font-sizes */
     border: none;
     border-radius: 0.5rem;
     color: #fff;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     cursor: pointer;
     z-index: 2;
 
@@ -278,16 +282,16 @@ h1, h1 span{ /* Header 1 font-sizes */
 }
 
 .illustration-1{
-    max-width: 40%;
-    margin: auto;
-    margin-top: 10px;
+    width: 50%;
+    /* margin: auto; */
+    margin-top: 80px;
 
 }
 
 /* Second Section */
 .second-section{
     max-width: 80rem;
-    padding: 1.2rem;
+    padding: 5rem 1.2rem;
     margin: auto;
 }
 .community-icon{
@@ -892,7 +896,7 @@ footer div a:hover{
 
 
 /* MEDIA QUERIES */
-@media(max-width:549px){
+/* @media(max-width:549px){
     .illustration-1{
         max-width: 120vw;
     }
@@ -902,10 +906,10 @@ footer div a:hover{
     .illustration-1{
         max-width: 80vw;
     }
-    h1, h1 span{ /* Header 1 font-sizes */
+    h1, h1 span{ 
         font-size: 3.8rem;
     } 
-}
+} 
 
 @media(max-width:590px){
     footer{
@@ -914,7 +918,7 @@ footer div a:hover{
 }
 
 @media(min-width:750px){ 
-    h1, h1 span{ /* Header 1 font-sizes */
+    h1, h1 span{ 
         font-size: 4.2rem;
     } 
     .illustration-1{
@@ -942,7 +946,7 @@ footer div a:hover{
         max-width: 70vw;
         margin-top: -5rem;
     }
-    h1, h1 span{ /* Header 1 font-sizes */
+    h1, h1 span{ 
         font-size: 4.4rem;
     }
 }
@@ -961,4 +965,4 @@ footer div a:hover{
     .first-section{
         padding: 0 20%;
     }
-}
+} */
