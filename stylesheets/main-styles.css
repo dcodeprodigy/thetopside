@@ -408,6 +408,7 @@ h1, h1 span{ /* Header 1 font-sizes */
     font-family: "Vazirmatn", Arial;
 }
 .third-section div h2 span{
+    font-family: "Vazirmatn", Arial;
     font-size: 2rem;
     color: #1761eb;
 }
