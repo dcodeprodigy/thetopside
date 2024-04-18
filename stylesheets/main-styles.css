@@ -265,7 +265,8 @@ h1, h1 span{ /* Header 1 font-sizes */
     padding: 1rem 2rem;
     cursor: pointer;
     z-index: 2;
-
+    text-decoration: none;
+    
     transition: box-shadow 1s;
 }
 
