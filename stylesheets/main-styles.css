@@ -405,6 +405,7 @@ h1, h1 span{ /* Header 1 font-sizes */
     font-size: 2rem;
     line-height: 2.8rem;
     margin-top: 0;
+    font-family: "Vazirmatn", Arial;
 }
 .third-section div h2 span{
     font-size: 2rem;
