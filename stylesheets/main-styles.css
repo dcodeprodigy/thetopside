@@ -265,7 +265,6 @@ h1, h1 span{ /* Header 1 font-sizes */
     padding: 1rem 2rem;
     cursor: pointer;
     z-index: 2;
-    text-decoration: none;
     
     transition: box-shadow 1s;
 }
@@ -281,6 +280,9 @@ h1, h1 span{ /* Header 1 font-sizes */
     opacity: 0.8;
 }
 
+.get-started a{
+    text-decoration: none;
+}
 .illustration-1{
     width: 50%;
     margin-top: 100px;
