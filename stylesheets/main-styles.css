@@ -281,6 +281,16 @@ h1, h1 span{ /* Header 1 font-sizes */
 }
 
 .get-started a{
+    color:white;
+    font-size: inherit;
+    text-decoration: none;
+}
+.get-started a:visited{
+    color:white;
+    text-decoration: none;
+}
+.get-started a:active{
+    color:white;
     text-decoration: none;
 }
 .illustration-1{
