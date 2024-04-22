@@ -38,6 +38,9 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
     z-index: 100;
 }
 
+.website-logo{
+    height: 6rem;
+}
 .website-navigation-section nav {
     display: flex;
     flex-direction: row;
