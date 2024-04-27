@@ -210,9 +210,16 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
     width: 100vw;
     padding: 30px 30px;
     margin: auto;
-    background: rgb(0,36,107);
-    background: linear-gradient(152deg, rgba(0,36,107,1) 66%, rgba(27,58,116,1) 85%, rgba(153,190,255,1) 100%);
+   /* background: rgb(0,36,107);
+    background: linear-gradient(152deg, rgba(0,36,107,1) 66%, rgba(27,58,116,1) 85%, rgba(153,190,255,1) 100%); */
     background-attachment: scroll;
+
+
+    background: rgb(50,91,123);
+    background: -moz-linear-gradient(170deg, rgba(50,91,123,1) 12%, rgba(47,93,127,1) 93%);
+    background: -webkit-linear-gradient(170deg, rgba(50,91,123,1) 12%, rgba(47,93,127,1) 93%);
+    background: linear-gradient(170deg, rgba(50,91,123,1) 12%, rgba(47,93,127,1) 93%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#325b7b",endColorstr="#2f5d7f",GradientType=1);
 }
 
 .sub-fs{
