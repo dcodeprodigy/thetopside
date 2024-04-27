@@ -216,10 +216,10 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
 
 
     background: rgb(50,91,123);
-    background: -moz-linear-gradient(170deg, rgba(50,91,123,1) 12%, rgba(47,93,127,1) 93%);
-    background: -webkit-linear-gradient(170deg, rgba(50,91,123,1) 12%, rgba(47,93,127,1) 93%);
-    background: linear-gradient(170deg, rgba(50,91,123,1) 12%, rgba(47,93,127,1) 93%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#325b7b",endColorstr="#2f5d7f",GradientType=1);
+    background: -moz-linear-gradient(190deg, rgba(50,91,123,1) 14%, rgba(26,54,74,1) 93%);
+background: -webkit-linear-gradient(190deg, rgba(50,91,123,1) 14%, rgba(26,54,74,1) 93%);
+background: linear-gradient(190deg, rgba(50,91,123,1) 14%, rgba(26,54,74,1) 93%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#325b7b",endColorstr="#1a364a",GradientType=1);
 }
 
 .sub-fs{
