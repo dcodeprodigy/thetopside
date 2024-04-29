@@ -56,7 +56,9 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
 }
 
 .menu-button{
-    background-color:#02102b;
+/*     background-color:#02102b; */
+    background: rgb(0,36,107);
+    background: linear-gradient(152deg, rgba(0,36,107,1) 66%, rgba(27,58,116,1) 85%, rgba(153,190,255,1) 100%);
     width: 45px;
     height: 45px;
     border: none;
