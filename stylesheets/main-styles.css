@@ -17,8 +17,8 @@ body{
     overflow-x: hidden;
 }
 
-h1::selection, h2::selection, p::selection, h1 span::selection{
-    background-color: #FFA722;
+body{
+    background-color: #355A79;
 }
 
 
