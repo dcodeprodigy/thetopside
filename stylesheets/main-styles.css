@@ -238,9 +238,9 @@ h1{
 h1 span{
 /*     color: #DFB234; */
     background: rgb(223,178,52);
-    background: -moz-linear-gradient(170deg, rgba(223,178,52,1) 15%, rgba(27,58,116,1) 96%);
-    background: -webkit-linear-gradient(170deg, rgba(223,178,52,1) 15%, rgba(27,58,116,1) 96%);
-    background: linear-gradient(170deg, rgba(223,178,52,1) 15%, rgba(27,58,116,1) 96%);
+    background: -moz-linear-gradient(170deg, rgba(223,178,52,1) 60%, rgba(27,58,116,1) 100%);
+    background: -webkit-linear-gradient(170deg, rgba(223,178,52,1) 60%, rgba(27,58,116,1) 100%);
+    background: linear-gradient(170deg, rgba(223,178,52,1) 60%, rgba(27,58,116,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dfb234",endColorstr="#1b3a74",GradientType=1);
     
     background-clip: text;
