@@ -11,13 +11,13 @@ const fSect = document.querySelector(".first-section");
 
 
 // To open the menu bar at the navigation section
-// menuBar.addEventListener("click", ()=>{
-//     if(sideBar.style.display === "block"){
-//         sideBar.style.display = "none"
-//     } else {
-//         sideBar.style.display = "block";
-//     }
-// });
+menuBar.addEventListener("click", ()=>{
+    if(sideBar.style.display === "block"){
+        sideBar.style.display = "none"
+    } else {
+        sideBar.style.display = "block";
+    }
+});
 
 newsletterLink.addEventListener("click", ()=>{
     if(sideBar.style.display === "none"){
@@ -28,11 +28,11 @@ newsletterLink.addEventListener("click", ()=>{
 });
 
 // Closes the menubar by clicking anypart of the body only when open
-fSect.addEventListener("click", ()=>{
-    if(sideBar.style.display === "block"){
-        sideBar.classList.toggle("hidden");
-    }else sideBar.classList.toggle("hidden");
-});
+// fSect.addEventListener("click", ()=>{
+//     if(sideBar.style.display === "block"){
+//         sideBar.classList.toggle("hidden");
+//     }else sideBar.classList.toggle("hidden");
+// });
 
 
 
