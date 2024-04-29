@@ -94,15 +94,6 @@ body{
     top: -15px;
 }
 
-/* .side-bar::before{
-    background-color: red;
-}
-.side-bar::after{
-    background-color: #1761eb;
-    right: 90px;
-    border-bottom-left-radius: 80px;
-    border-top-left-radius: 80px;
-} */
 
 .side-bar a{
     font-family: "Roboto", sans-serif;
@@ -119,7 +110,8 @@ body{
 
 .side-bar a:hover{
     text-decoration: underline;
-    text-decoration-color: #e0e0e0;
+/*     text-decoration-color: #e0e0e0; */
+    text-decoration-color: #dea742;
     color: #e0e0e0;
 }
 
