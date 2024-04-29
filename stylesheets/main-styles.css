@@ -17,9 +17,9 @@ body{
     overflow-x: hidden;
 }
 
-body::selection{
+/* body::selection{
     background-color: #355A79;
-}
+} */
 
 
 /* Navigation header styling */
