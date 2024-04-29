@@ -603,8 +603,10 @@ h1, h1 span{ /* Header 1 font-sizes */
 
 /* Fifth Section */
 .fifth-section{
+/*     background: rgb(0,36,107);
+    background: linear-gradient(152deg, rgba(0,36,107,1) 66%, rgba(27,58,116,1) 85%); */
     background: rgb(0,36,107);
-    background: linear-gradient(152deg, rgba(0,36,107,1) 66%, rgba(27,58,116,1) 85%);
+    background: linear-gradient(152deg, rgba(0,36,107,1) 66%, rgba(27,58,116,1) 85%, rgba(153,190,255,1) 100%);
     padding: 5rem 2.5rem;
     max-width: 100vw;
     margin: 0;
