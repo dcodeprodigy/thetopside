@@ -40,6 +40,7 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
 
 .website-logo{
     height: 6rem;
+    margin-right: 13%;
 }
 .website-navigation-section nav {
     display: flex;
@@ -125,9 +126,9 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
     height: 40%;
 }
 
-.website-navigation-section .website-logo{
+/* .website-navigation-section .website-logo{
     margin-left: -1rem;
-}
+} */
 
 
 .guage{
@@ -141,7 +142,7 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
 
 @media(max-width:800px){
     .website-navigation-section{
-        padding: 0 35px;
+        padding: 0 15px 0 15px;
     }
 }
 
