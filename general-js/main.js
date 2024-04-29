@@ -6,6 +6,7 @@ const guage =  document.querySelector(".guage");
 const sideBar = document.querySelector(".side-bar");
 const newsletterLink = document.querySelector(".newsletter-link");
 const backDropDiv = document.querySelector(".back-drop-div");
+const fSect = document.querySelector(".first-section");
 
 
 
@@ -27,7 +28,7 @@ newsletterLink.addEventListener("click", ()=>{
 });
 
 // Closes the menubar by clicking anypart of the body only when open
-body.addEventListener("click", ()=>{
+fSect.addEventListener("click", ()=>{
     if(sideBar.style.display === "block"){
         sideBar.classList.toggle("hidden");
     }else sideBar.classList.toggle("hidden");
