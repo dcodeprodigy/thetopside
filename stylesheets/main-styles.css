@@ -110,8 +110,7 @@ body{
 
 .side-bar a:hover{
     text-decoration: underline;
-/*     text-decoration-color: #e0e0e0; */
-    text-decoration-color: #dea742;
+    text-decoration-color: #e0e0e0;
     color: #e0e0e0;
 }
 
