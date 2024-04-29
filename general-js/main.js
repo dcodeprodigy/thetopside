@@ -11,13 +11,13 @@ const fSect = document.querySelector(".first-section");
 
 
 // To open the menu bar at the navigation section
-menuBar.addEventListener("click", ()=>{
-    if(sideBar.style.display === "block"){
-        sideBar.style.display = "none"
-    } else {
-        sideBar.style.display = "block";
-    }
-});
+// menuBar.addEventListener("click", ()=>{
+//     if(sideBar.style.display === "block"){
+//         sideBar.style.display = "none"
+//     } else {
+//         sideBar.style.display = "block";
+//     }
+// });
 
 newsletterLink.addEventListener("click", ()=>{
     if(sideBar.style.display === "none"){
