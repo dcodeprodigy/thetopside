@@ -184,7 +184,7 @@ body{
     }
 
     .side-bar{
-        display: none;
+        display: none !important;
     }
     }
     
