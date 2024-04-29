@@ -40,7 +40,7 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
 
 .website-logo{
     height: 6rem;
-    margin-right: 13%;
+    margin-right: -13%;
 }
 .website-navigation-section nav {
     display: flex;
