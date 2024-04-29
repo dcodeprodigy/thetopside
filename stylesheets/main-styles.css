@@ -236,7 +236,7 @@ h1{
     margin-right: 0;
 }
 h1 span{
-    color: #DFB234;
+    color: #e9b506;
 /*   background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
@@ -848,7 +848,7 @@ footer{
     grid-gap: 5%;
     width: 100%;
     padding: 2.5rem !important;
-    background-color: #02102b;
+    background-color: #021f55;
     margin-top: 2rem;
     border-top: 1px solid #9c9c9c;
 }
@@ -866,7 +866,7 @@ footer div h4{
 footer div a {
     display:block;
     max-width: max-content;
-    color: #e4e4e4bd;
+    color: #e3e3d3;
     font-size: 1.3rem;
     text-decoration: none;
 }
@@ -878,7 +878,7 @@ footer div a .coming-soon{
 
 footer div a:hover > .coming-soon{
     display: inline-block;
-    color: #e4e4e467;
+    color: #e3e3d3;
 }
 footer div a:hover{
     text-decoration: underline;
@@ -893,7 +893,7 @@ footer div a:hover{
 }
 
 .second-form p{
-    color: #e4e4e4bd;
+    color: #e3e3d3;
     font-size: 1.3rem;
     margin-top: 0;
 }
@@ -964,82 +964,6 @@ footer div a:hover{
     border: none;
     border-radius: 0.5rem;
 }
-
-
-
-
-
-
-
-
-/* MEDIA QUERIES */
-/* @media(max-width:549px){
-    .illustration-1{
-        max-width: 120vw;
-    }
-}
-
- @media(min-width:550px){
-    .illustration-1{
-        max-width: 80vw;
-    }
-    h1, h1 span{ 
-        font-size: 3.8rem;
-    } 
-} 
-
-
-
-@media(min-width:750px){ 
-    h1, h1 span{ 
-        font-size: 4.2rem;
-    } 
-    .illustration-1{
-        margin-top: -5rem;
-    }
-}
-
-@media(min-width:881px){
-    .first-section{
-        padding: 0 5%;
-    }
-}
-
-@media(min-width:881px){
-    .first-section{
-        padding: 0 7%;
-    }
-}
-
-@media(min-width:1000px){
-    .first-section{
-        padding: 0 10%;
-    }
-    .illustration-1{
-        max-width: 70vw;
-        margin-top: -5rem;
-    }
-    h1, h1 span{ 
-        font-size: 4.4rem;
-    }
-}
-
-@media(min-width:1120px){
-    .first-section{
-        padding: 0 15%;
-    }
-    .illustration-1{
-        max-width: 70vw;
-        margin-top: -7rem;
-    }
-}
-
-@media(min-width:1280px){
-    .first-section{
-        padding: 0 20%;
-    }
-} */
-
 
 @media(max-width:590px){
     footer{
