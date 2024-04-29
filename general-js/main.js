@@ -26,12 +26,12 @@ newsletterLink.addEventListener("click", ()=>{
     }
 });
 
-// Close the menu by clicking anypart of the body
-// html.addEventListener("click", ()=>{
-//     if(sideBar.style.display === "block"){
-//         sideBar.style.display = "none";
-//     }
-// });
+// Closes the menubar by clicking anypart of the body only when open
+body.addEventListener("click", ()=>{
+    if(sideBar.style.display === "block"){
+        sideBar.classList.toggle("hidden");
+    }else sideBar.classList.toggle("hidden");
+});
 
 
 
