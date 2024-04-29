@@ -215,11 +215,11 @@ h1::selection, h2::selection, p::selection, h1 span::selection{
     background-attachment: scroll;
 
 
-    background: rgb(50,91,123);
-    background: -moz-linear-gradient(190deg, rgba(50,91,123,1) 14%, rgba(26,54,74,1) 93%);
-background: -webkit-linear-gradient(190deg, rgba(50,91,123,1) 14%, rgba(26,54,74,1) 93%);
-background: linear-gradient(190deg, rgba(50,91,123,1) 14%, rgba(26,54,74,1) 93%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#325b7b",endColorstr="#1a364a",GradientType=1);
+    background: rgb(92,141,173);
+    background: -moz-linear-gradient(170deg, rgba(92,141,173,1) 15%, rgba(53,90,121,1) 92%);
+    background: -webkit-linear-gradient(170deg, rgba(92,141,173,1) 15%, rgba(53,90,121,1) 92%);
+    background: linear-gradient(170deg, rgba(92,141,173,1) 15%, rgba(53,90,121,1) 92%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c8dad",endColorstr="#355a79",GradientType=1);
 }
 
 .sub-fs{
