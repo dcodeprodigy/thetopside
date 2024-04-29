@@ -236,10 +236,16 @@ h1{
     margin-right: 0;
 }
 h1 span{
-    color: #0df06b;
-    /* background-clip: text;
+/*     color: #DFB234; */
+    background: rgb(223,178,52);
+    background: -moz-linear-gradient(170deg, rgba(223,178,52,1) 15%, rgba(27,58,116,1) 96%);
+    background: -webkit-linear-gradient(170deg, rgba(223,178,52,1) 15%, rgba(27,58,116,1) 96%);
+    background: linear-gradient(170deg, rgba(223,178,52,1) 15%, rgba(27,58,116,1) 96%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dfb234",endColorstr="#1b3a74",GradientType=1);
+    
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;
 }
 h1, h1 span{ /* Header 1 font-sizes */
     font-size: 5.2rem;
