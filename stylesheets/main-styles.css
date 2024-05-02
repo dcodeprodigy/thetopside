@@ -803,13 +803,18 @@ h1, h1 span{ /* Header 1 font-sizes */
     border: 0.3rem solid #1761eb;
     padding: 0.3rem;
     background-color: #fff;
+
+    transition: background 700ms ease-in-out,
+        box-shadow 700ms ease-out;
 }
 
 .mods img:nth-of-type(1):hover{
-    background: linear-gradient(145deg, #f0f0f0, #cacaca);
-    box-shadow:  10px 10px 54px #c1c1c1,
-                 -10px -10px 54px #ffffff;
+    background: linear-gradient(45deg, #ffffff, #dddcdc);
+    box-shadow:  9px -9px 45px #d3d2d2,
+             -9px 9px 45px #ffffff;
 }
+
+
 
 
 .mods h3{
