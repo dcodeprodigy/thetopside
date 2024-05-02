@@ -793,7 +793,7 @@ h1, h1 span{ /* Header 1 font-sizes */
     margin-bottom: 3rem;
 }
 
-.mods picture, .mods img{
+ .mods picture{
     width: 50vw;
     max-width: 28rem;
     border-radius: 50%;
