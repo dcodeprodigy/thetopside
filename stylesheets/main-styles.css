@@ -804,12 +804,14 @@ h1, h1 span{ /* Header 1 font-sizes */
     padding: 0.3rem;
     background-color: #fff;
 
-    transition: background 700ms ease-in-out,
+    transition: border 700ms ease-out,
+        background 700ms ease-in-out,
         box-shadow 700ms ease-out;
 }
 
 .mods img:nth-of-type(1):hover{
-    background: linear-gradient(45deg, #ffffff, #dddcdc);
+    border: none;
+    background: linear-gradient(90deg, #ffffff, #dddcdc);
     box-shadow:  9px -9px 45px #d3d2d2,
              -9px 9px 45px #ffffff;
 }
