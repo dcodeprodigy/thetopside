@@ -793,13 +793,13 @@ h1, h1 span{ /* Header 1 font-sizes */
     margin-bottom: 3rem;
 }
 
-.mods img{
+.mods picture, .mods img{
     width: 50vw;
     max-width: 28rem;
     border-radius: 50%;
 }
 
-.mods picture:nth-of-type(1){
+.mods picture:nth-of-type(1), .mods img:nth-of-type(1){
     border: 0.3rem solid #1761eb;
     padding: 0.3rem;
     background-color: #fff;
@@ -810,7 +810,7 @@ h1, h1 span{ /* Header 1 font-sizes */
         box-shadow 250ms ease-out;
 }
 
-.mods picture:nth-of-type(1):hover{
+.mods picture:nth-of-type(1):hover, .mods img:nth-of-type(1):hover{
     border: none;
     padding: 0;
     background: linear-gradient(0deg, #ffffff, #dddcdc);
