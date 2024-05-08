@@ -39,27 +39,11 @@
     </style>
 </head>
 <body id="contentBox" >
-    <script>
-
-        function fetchAndDisplayScriptContent() {
-  fetch('/pages/api/get-script-content.js')
-    .then(response => response.text())
-    .then(data => {
-      // Find the appropriate place to insert the content
-      const container = document.getElementById('contentBox'); 
-      if (container) {
-        container.innerHTML = data;
-      }
-    })
-    .catch(error => console.error('Error fetching script content:', error));
-}
-
-window.addEventListener('DOMContentLoaded', fetchAndDisplayScriptContent);
-    </script>
-  <!--  <iframe src = "https://script.google.com/macros/s/AKfycbzcA60vtPiYMBc2pVwmjCFGbg74dI11PqkrwWJabOKfE3pXeyHsx4weCUUaORcqE8_8vw/exec"
+    
+  <iframe src = "https://script.google.com/macros/s/AKfycbzcA60vtPiYMBc2pVwmjCFGbg74dI11PqkrwWJabOKfE3pXeyHsx4weCUUaORcqE8_8vw/exec"
             title="Home - The Topside" 
             frameborder="0" 
             style="width: 100%; height: 100vh;">
-    </iframe> -->
+  </iframe>
 </body>
 </html>
