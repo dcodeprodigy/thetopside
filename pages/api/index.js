@@ -1,9 +1,9 @@
 function fetchAndDisplayScriptContent() {
-  fetch('/api/get-script-content')
+  fetch('/pages/api/get-script-content')
     .then(response => response.text())
     .then(data => {
       // Find the appropriate place to insert the content
-      const container = document.getElementById('scriptContentContainer'); 
+      const container = document.getElementById('contentBox'); 
       if (container) {
         container.innerHTML = data;
       }
