@@ -1,4 +1,4 @@
-## This Folder Contain Reusable Pieces Of Javascript Code For Useful Features(Vanilla, Obviously. Fuck React Bro). 
+## This Folder Contains Reusable Pieces Of Javascript Code For Useful Features(Vanilla, Obviously. Fuck React Bro). 
 
 These Features Can Easily Be Used In Other Projects By Simply Copying And Pasting
 
