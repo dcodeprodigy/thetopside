@@ -1,5 +1,5 @@
 function fetchAndDisplayScriptContent() {
-  fetch('/pages/api/get-script-content')
+  fetch('/pages/api/get-script-content.js')
     .then(response => response.text())
     .then(data => {
       // Find the appropriate place to insert the content
