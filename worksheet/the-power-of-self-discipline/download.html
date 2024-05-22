@@ -16,13 +16,27 @@
             style="width: 100%; height: 100vh;">
     </iframe>
 
+    
 
     <script async>
       const iframe = document.querySelector('iframe');
       
       const currentLoc = window.location.href;
       const uToken = currentLoc.split('=');
-      iframe.src = 'https://script.google.com/macros/s/AKfycbz28eScbK_JBYZoNQArnmMZAM-RXSNMiUhorHdvkuAg1F44TsQ_daq5C8IIyOW6__a66A/exec?uulinktoken=' + uToken; 
+      // iframe.src = 'https://script.google.com/macros/s/AKfycbz28eScbK_JBYZoNQArnmMZAM-RXSNMiUhorHdvkuAg1F44TsQ_daq5C8IIyOW6__a66A/exec?uulinktoken=' + uToken; 
+
+
+      fetch(`https://script.google.com/macros/s/AKfycbzWB2ir6N9XN6PDvQ4vbVpncAsf5rFomuTuKMQeWM8p_wA4WrRQ15jDhOBnWF6Z4Z93Tg/exec?uulinktoken=${uToken}`);
+      .then(response => response.json()) 
+      .then(pdfArray => {
+        const pdf0 = pdfArray[0]; 
+        const pdf1 = pdfArray[1];
+        const pdf2 = pdfArray[2];
+    
+        
+      })
+      .catch(error => console.error("Error fetching data:", error));
+
       
     </script>
   </body>
