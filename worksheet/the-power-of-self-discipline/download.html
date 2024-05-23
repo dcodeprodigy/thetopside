@@ -50,10 +50,7 @@
 fetch(`https://script.google.com/macros/s/AKfycbzWB2ir6N9XN6PDvQ4vbVpncAsf5rFomuTuKMQeWM8p_wA4WrRQ15jDhOBnWF6Z4Z93Tg/exec?uulinktoken=${uToken}`, {
       redirect: "follow",
       method: "GET",
-      body: JSON.stringify(DATA),
-      headers: {
-        "Content-Type": "text/plain;charset=utf-8",
-      },
+      
     })
     .then(response => response.json()) 
     .then(pdfArray => {
