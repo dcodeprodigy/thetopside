@@ -79,9 +79,10 @@
         const pdf1 = data[1];
         const pdf2 = data[2];
       },
-      error: function(jqXHR, textStatus, errorThrown) {  // Callback function for errors
-        console.error('There was a problem with your fetch operation:', errorThrown, textStatus,);
-      }
+      error: function(jqXHR, textStatus, errorThrown) { 
+              console.error('There was a problem with your fetch operation:', errorThrown, textStatus);
+          } // <-- Correct placement of the closing bracket
+      }); // <-- Closing bracket for the jQuery.ajax() call
         
 
       
