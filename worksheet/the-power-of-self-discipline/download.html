@@ -71,16 +71,21 @@
       crossDomain: true,
       url: url,
       method: "GET",
-      dataType: "jsonp"
-      });
+      dataType: "jsonp",
+      success: function(data) { 
+        // 'data' is the returned data from Google Apps Script
+        console.log(data); 
+        const pdf0 = data[0];
+        const pdf1 = data[1];
+        const pdf2 = data[2];
+      },
+     error: function(jqXHR, textStatus, errorThrown) {  // Callback function for errors
+        console.error('There was a problem with your fetch operation:', errorThrown);
+      },
+        );
+        
+
       
-       // log the returned data
-        let [uToken] = function (e) {
-        console.log(e);
-        const pdf0 = e[0]; 
-        const pdf1 = e[1];
-        const pdf2 = e[2];
-        }
     </script>
   </body>
 </html>
