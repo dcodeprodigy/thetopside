@@ -80,7 +80,7 @@
         const pdf2 = data[2];
       },
       error: function(jqXHR, textStatus, errorThrown) { 
-              console.error('There was a problem with your fetch operation:', errorThrown, textStatus);
+              console.error('There was a problem with your fetch operation:', errorThrown, textStatus, jqXHR);
           } // <-- Correct placement of the closing bracket
       }); // <-- Closing bracket for the jQuery.ajax() call
         
