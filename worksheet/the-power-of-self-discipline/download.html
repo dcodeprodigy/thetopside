@@ -17,6 +17,7 @@
     </iframe>
 
     
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <script async>
       const iframe = document.querySelector('iframe');
@@ -47,21 +48,39 @@
    
 
       
-fetch(`https://script.google.com/macros/s/AKfycbzWB2ir6N9XN6PDvQ4vbVpncAsf5rFomuTuKMQeWM8p_wA4WrRQ15jDhOBnWF6Z4Z93Tg/exec?uulinktoken=${uToken}`, {
-      redirect: "follow",
-      method: "GET",
+// fetch(`https://script.google.com/macros/s/AKfycbzWB2ir6N9XN6PDvQ4vbVpncAsf5rFomuTuKMQeWM8p_wA4WrRQ15jDhOBnWF6Z4Z93Tg/exec?uulinktoken=${uToken}`, {
+//       redirect: "follow",
+//       method: "GET",
       
-    })
-    .then(response => response.json()) 
-    .then(pdfArray => {
-        console.log(pdfArray);
-        const pdf0 = pdfArray[0]; 
-        const pdf1 = pdfArray[1];
-        const pdf2 = pdfArray[2];
-    })
-    .catch(error => {
-      console.error('There was a problem with your fetch operation:', error);
-    });
+//     })
+//     .then(response => response.json()) 
+//     .then(pdfArray => {
+//         console.log(pdfArray);
+//         const pdf0 = pdfArray[0]; 
+//         const pdf1 = pdfArray[1];
+//         const pdf2 = pdfArray[2];
+//     })
+//     .catch(error => {
+//       console.error('There was a problem with your fetch operation:', error);
+//     });
+
+
+    // Make an AJAX call to Google Script
+      let url = `https://script.google.com/macros/s/AKfycbzWB2ir6N9XN6PDvQ4vbVpncAsf5rFomuTuKMQeWM8p_wA4WrRQ15jDhOBnWF6Z4Z93Tg/exec?uulinktoken=${uToken}`;
+      jQuery.ajax({
+      crossDomain: true,
+      url: url,
+      method: "GET",
+      dataType: "jsonp"
+      });
+      
+       // log the returned data
+        function `${uToken}`(e) {
+        console.log(e);
+        const pdf0 = e[0]; 
+        const pdf1 = e[1];
+        const pdf2 = e[2];
+        }
     </script>
   </body>
 </html>
